@@ -9,6 +9,7 @@ command: sleek
 finish-args:
   - --share=ipc
   - --socket=x11
+  - --share=network
   - --device=dri
   - --filesystem=home
 sdk-extensions:
@@ -29,7 +30,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/ransome1/sleek.git
-        commit: 1bcdc188a9f47eb08116fe532bd8e2ba076b7b04
+        branch: master
+        #commit: 1bcdc188a9f47eb08116fe532bd8e2ba076b7b04
         dest: sleek
       - generated-sources.json
 
@@ -57,4 +59,4 @@ modules:
       - install -Dm644 com.github.ransome1.sleek.png /app/share/icons/hicolor/128x128/apps/com.github.ransome1.sleek.png
     sources:
       - type: file
-        path: com.github.ransome1.sleek.png
+        path: sleek/com.github.ransome1.sleek.png
