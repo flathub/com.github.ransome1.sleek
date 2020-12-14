@@ -33,8 +33,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/ransome1/sleek.git
-        #branch: master
-        commit: fa54bfc332dcce6473953a965e13b91749200b04
+        branch: master
+        #commit: fa54bfc332dcce6473953a965e13b91749200b04
         dest: sleek
       - generated-sources.json
 

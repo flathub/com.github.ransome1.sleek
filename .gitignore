@@ -1,6 +1,6 @@
 *.ini
 *.py
-*.
+*.gitignore
 *.xml
 *.desktop
 *.png
