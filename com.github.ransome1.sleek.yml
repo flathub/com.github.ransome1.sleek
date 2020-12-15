@@ -26,7 +26,6 @@ modules:
         NPM_CONFIG_LOGLEVEL: info
     buildsystem: simple
     build-commands:
-      - npm install i18next --prefix=sleek --offline --cache=$FLATPAK_BUILDER_BUILDDIR/flatpak-node/npm-cache
       - npm install --prefix=sleek --offline --cache=$FLATPAK_BUILDER_BUILDDIR/flatpak-node/npm-cache
       - . flatpak-node/electron-builder-arch-args.sh; npm run --prefix=sleek --offline pack -- $ELECTRON_BUILDER_ARCH_ARGS
       - mv sleek/dist/linux*unpacked /app/sleek
@@ -38,6 +37,7 @@ modules:
       - type: git
         url: https://github.com/ransome1/sleek.git
         branch: master
+        commit: 1bcdc188a9f47eb08116fe532bd8e2ba076b7b04
         #commit: fa54bfc332dcce6473953a965e13b91749200b04
         dest: sleek
       - generated-sources.json
