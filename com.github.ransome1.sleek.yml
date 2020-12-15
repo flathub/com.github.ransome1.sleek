@@ -27,9 +27,9 @@ modules:
       - . flatpak-node/electron-builder-arch-args.sh; npm run --prefix=sleek --offline pack -- $ELECTRON_BUILDER_ARCH_ARGS
       - mv sleek/dist/linux*unpacked /app/sleek
       - install -Dm755 sleek.sh /app/bin/sleek
-      - install -Dm644 sleek/flatpak/com.github.ransome1.sleek.png /app/share/icons/hicolor/128x128/apps/com.github.ransome1.sleek.png
-      - install -Dm644 sleek/flatpak/com.github.ransome1.sleek.desktop /app/share/applications/com.github.ransome1.sleek.desktop
-      - install -Dm644 sleek/flatpak/com.github.ransome1.sleek.appdata.xml /app/share/metainfo/com.github.ransome1.sleek.appdata.xml
+      #- install -Dm644 sleek/flatpak/com.github.ransome1.sleek.png /app/share/icons/hicolor/128x128/apps/com.github.ransome1.sleek.png
+      #- install -Dm644 sleek/flatpak/com.github.ransome1.sleek.desktop /app/share/applications/com.github.ransome1.sleek.desktop
+      #- install -Dm644 sleek/flatpak/com.github.ransome1.sleek.appdata.xml /app/share/metainfo/com.github.ransome1.sleek.appdata.xml
     sources:
       - type: git
         url: https://github.com/ransome1/sleek.git
@@ -43,3 +43,24 @@ modules:
         commands:
           - exec env TMPDIR=$XDG_CACHE_HOME zypak-wrapper /app/sleek/sleek
         dest-filename: sleek.sh
+  - name: appdata
+    buildsystem: simple
+    build-commands:
+      - install -Dm644 com.github.ransome1.sleek.appdata.xml /app/share/metainfo/com.github.ransome1.sleek.appdata.xml
+    sources:
+      - type: file
+        path: com.github.ransome1.sleek.appdata.xml
+  - name: desktop-entry
+    buildsystem: simple
+    build-commands:
+      - install -Dm644 com.github.ransome1.sleek.desktop /app/share/applications/com.github.ransome1.sleek.desktop
+    sources:
+      - type: file
+        path: com.github.ransome1.sleek.desktop
+  - name: icon
+    buildsystem: simple
+    build-commands:
+      - install -Dm644 com.github.ransome1.sleek.png /app/share/icons/hicolor/128x128/apps/com.github.ransome1.sleek.png
+    sources:
+      - type: file
+        path: com.github.ransome1.sleek.png
