@@ -1,9 +1,0 @@
-[Desktop Entry]
-Version=0.4.2
-Name=sleek
-Exec=sleek
-Type=Application
-Icon=com.github.ransome1.sleek
-Categories=Office
-Terminal=false
-Comment=A simple todo manager based on the concept of todo.txt
