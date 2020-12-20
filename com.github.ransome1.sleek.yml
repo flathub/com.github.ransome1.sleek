@@ -1,7 +1,7 @@
 app-id: com.github.ransome1.sleek
-runtime: org.gnome.Platform
+runtime: org.freedesktop.Platform
 runtime-version: '20.08'
-sdk: org.gnome.Sdk
+sdk: org.freedesktop.Sdk
 base: org.electronjs.Electron2.BaseApp
 base-version: '20.08'
 separate-locales: false
@@ -12,6 +12,7 @@ finish-args:
   - --share=network
   - --device=dri
   - --filesystem=home
+  - --talk-name=org.freedesktop.Notifications
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.node14
 modules:
