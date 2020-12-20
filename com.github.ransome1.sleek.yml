@@ -1,7 +1,7 @@
 app-id: com.github.ransome1.sleek
 runtime: org.gnome.Platform
 runtime-version: '20.08'
-sdk: org.freedesktop.Sdk
+sdk: org.gnome.Sdk
 base: org.electronjs.Electron2.BaseApp
 base-version: '20.08'
 separate-locales: false
