@@ -38,10 +38,6 @@ modules:
 
       - generated-sources.json
 
-      - type: file
-        path: package-lock.json
-        dest: sleek
-
       - type: script
         commands:
           - exec env TMPDIR=$XDG_CACHE_HOME zypak-wrapper /app/sleek/sleek
