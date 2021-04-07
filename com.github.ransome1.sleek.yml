@@ -38,6 +38,12 @@ modules:
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
+<<<<<<< HEAD
+=======
+
+        commit: 1f99faa11721537c0449de756911f6afb62ec685
+        tag: v0.9.9
+>>>>>>> 2df258a124c9d8443f205f720a27f77223e0750f
       - generated-sources.json
 
       - type: script
