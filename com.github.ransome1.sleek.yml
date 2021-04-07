@@ -38,14 +38,10 @@ modules:
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
-<<<<<<< HEAD
-=======
 
-        commit: 1f99faa11721537c0449de756911f6afb62ec685
-        tag: v0.9.9
->>>>>>> 2df258a124c9d8443f205f720a27f77223e0750f
+      commit: 9327d2554de9ccf1cd7fb89ecddf99c8f91289f5
+      tag: v0.9.9
       - generated-sources.json
-
       - type: script
         commands:
           - exec env TMPDIR=$XDG_CACHE_HOME zypak-wrapper /app/sleek/sleek
