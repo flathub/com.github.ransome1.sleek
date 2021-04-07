@@ -39,7 +39,7 @@ modules:
           type: git
           tag-pattern: ^v([\d.]+)$
 
-        commit: dbe969533c900d23b8b0fb1c77893e608de4a088
+        commit: 1f99faa11721537c0449de756911f6afb62ec685
         tag: v0.9.9
       - generated-sources.json
 
