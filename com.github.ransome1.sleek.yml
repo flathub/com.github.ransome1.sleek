@@ -21,7 +21,6 @@ modules:
       append-path: /usr/lib/sdk/node14/bin
       env:
         XDG_CACHE_HOME: /run/build/sleek/flatpak-node/cache
-        GTK_USE_PORTAL: 1
     buildsystem: simple
     build-commands:
       - npm install --prefix=sleek --offline --cache=$FLATPAK_BUILDER_BUILDDIR/flatpak-node/npm-cache
@@ -39,7 +38,7 @@ modules:
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
-        commit: 0fa18b1723a52b0606db7c63b89e12b9a904fe46
+        commit: 255df4b1f41762c771831eca4634a3537477bf1f
         tag: v1.0.0
       - generated-sources.json
       - type: script
