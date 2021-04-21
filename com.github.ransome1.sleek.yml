@@ -24,13 +24,14 @@ modules:
     buildsystem: simple
     build-commands:
       - npm install --prefix=sleek --offline --cache=$FLATPAK_BUILDER_BUILDDIR/flatpak-node/npm-cache
-      - . flatpak-node/electron-builder-arch-args.sh; npm run --prefix=sleek --offline
-        pack -- $ELECTRON_BUILDER_ARCH_ARGS
+      - . flatpak-node/electron-builder-arch-args.sh
+      - npm run --prefix=sleek --offline pack -- $ELECTRON_BUILDER_ARCH_ARGS
       - mv sleek/dist/linux*unpacked /app/sleek
       - install -Dm755 sleek.sh /app/bin/sleek
-      - install -Dm644 sleek/flatpak/com.github.ransome1.sleek.png /app/share/icons/hicolor/128x128/apps/com.github.ransome1.sleek.png
-      - install -Dm644 sleek/flatpak/com.github.ransome1.sleek.desktop /app/share/applications/com.github.ransome1.sleek.desktop
-      - install -Dm644 sleek/flatpak/com.github.ransome1.sleek.appdata.xml /app/share/metainfo/com.github.ransome1.sleek.appdata.xml
+      - install -Dm644 com.github.ransome1.sleek.png /app/share/icons/hicolor/128x128/apps/com.github.ransome1.sleek.png
+      - install -Dm644 com.github.ransome1.sleek.desktop /app/share/applications/com.github.ransome1.sleek.desktop
+      - install -Dm644 com.github.ransome1.sleek.appdata.xml /app/share/metainfo/com.github.ransome1.sleek.appdata.xml
+      - install -Dm644 "sleek/assets/icons/sleek.svg" "app/share/icons/hicolor/scalable/apps/com.github.ransome1.sleek.svg"
     sources:
       - type: git
         url: https://github.com/ransome1/sleek.git
@@ -38,9 +39,15 @@ modules:
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
-        commit: 255df4b1f41762c771831eca4634a3537477bf1f
-        tag: v1.0.0
+        commit: 9afb1499ac21bde43fc1e001b2667f33f1dd23d4
+        #tag: v1.0.0
       - generated-sources.json
+      - type: file
+        path: com.github.ransome1.sleek.appdata.xml
+      - type: file
+        path: com.github.ransome1.sleek.desktop
+      - type: file
+        path: com.github.ransome1.sleek.png
       - type: script
         commands:
           - exec env TMPDIR=$XDG_CACHE_HOME zypak-wrapper /app/sleek/sleek
