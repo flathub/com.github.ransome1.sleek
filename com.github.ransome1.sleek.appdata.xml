@@ -10,7 +10,7 @@
   <developer_name>Robin Ahle</developer_name>
   <content_rating type="oars-1.0" />
   <releases>
-    <release version="1.0.0" date="2021-04-21"/>
+    <release version="1.0.1" date="2021-04-22"/>
   </releases>
   <url type="homepage">https://github.com/ransome1/sleek</url>
 
@@ -59,22 +59,34 @@
   <launchable type="desktop-id">com.github.ransome1.sleek.desktop</launchable>
   <screenshots>
     <screenshot type="default">
-      <image>https://raw.githubusercontent.com/ransome1/sleek/master/assets/screenshots/linux/main.png</image>
+      <image>https://raw.githubusercontent.com/ransome1/sleek/master/assets/screenshots/linux/todo_list.png</image>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/ransome1/sleek/master/assets/screenshots/linux/main_dark.png</image>
+      <image>https://raw.githubusercontent.com/ransome1/sleek/master/assets/screenshots/linux/multiline_autocomplete_dark.png</image>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/ransome1/sleek/master/assets/screenshots/linux/main_filter_dark.png</image>
+      <image>https://raw.githubusercontent.com/ransome1/sleek/master/assets/screenshots/linux/recurrence_picker_dark.png</image>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/ransome1/sleek/master/assets/screenshots/linux/add_todo_typeahead.png</image>
+      <image>https://raw.githubusercontent.com/ransome1/sleek/master/assets/screenshots/linux/category_filtered_dark.png</image>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/ransome1/sleek/master/assets/screenshots/linux/add_todo.png</image>
+      <image>https://raw.githubusercontent.com/ransome1/sleek/master/assets/screenshots/linux/date_picker.png</image>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/ransome1/sleek/master/assets/screenshots/linux/edit_todo.png</image>
+      <image>https://raw.githubusercontent.com/ransome1/sleek/master/assets/screenshots/linux/file_switcher.png</image>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/ransome1/sleek/master/assets/screenshots/linux/sort_by_projects.png</image>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/ransome1/sleek/master/assets/screenshots/linux/single_context_filtered_dark.png</image>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/ransome1/sleek/master/assets/screenshots/linux/compact_view_dark.png</image>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/ransome1/sleek/master/assets/screenshots/linux/sort_by_due_date_dark.png</image>
     </screenshot>
   </screenshots>
 </component>

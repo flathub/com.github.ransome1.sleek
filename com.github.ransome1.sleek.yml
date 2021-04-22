@@ -39,8 +39,6 @@ modules:
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
-        commit: 9afb1499ac21bde43fc1e001b2667f33f1dd23d4
-        #tag: v1.0.0
       - generated-sources.json
       - type: file
         path: com.github.ransome1.sleek.appdata.xml
