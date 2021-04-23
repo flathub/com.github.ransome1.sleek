@@ -34,6 +34,7 @@ modules:
         npm_config_nodedir: '/usr/lib/sdk/node14'
     buildsystem: simple
     build-commands:
+      - ls -l
       - 'HOME=$PWD yarn config --offline set yarn-offline-mirror $FLATPAK_BUILDER_BUILDDIR/flatpak-node/yarn-mirror'
       - 'yarn --offline'
       - '. flatpak-node/electron-builder-arch-args.sh; yarn run --offline pack -- $ELECTRON_BUILDER_ARCH_ARGS'
@@ -47,7 +48,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/ransome1/sleek.git
-        dest: sleek
+        tag: v1.0.2
+        dest: .
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
