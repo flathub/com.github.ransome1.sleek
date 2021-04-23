@@ -47,7 +47,6 @@ modules:
     sources:
       - type: git
         url: https://github.com/ransome1/sleek.git
-        commit: 277a7963a6f67183d02e9e0e41bcdb0cfb21078d
         dest: sleek
         x-checker-data:
           type: git
