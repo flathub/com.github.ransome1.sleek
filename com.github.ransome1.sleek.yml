@@ -19,7 +19,7 @@ modules:
   - name: yarn
     buildsystem: simple
     build-commands:
-      - 'cp -a * /app'
+      - cp -a * /app
     cleanup:
       - '*'
     sources:
@@ -28,16 +28,16 @@ modules:
         sha256: 34293da6266f2aae9690d59c2d764056053ff7eebc56b80b8df05010c3da9343
   - name: sleek
     build-options:
-      append-path: '/usr/lib/sdk/node14/bin:/app/yarn/bin'
+      append-path: /usr/lib/sdk/node14/bin:/app/yarn/bin
       env:
-        ELECTRON_CACHE: '/run/build/sleek/flatpak-node/electron-cache'
-        npm_config_nodedir: '/usr/lib/sdk/node14'
+        ELECTRON_CACHE: /run/build/sleek/flatpak-node/electron-cache
+        npm_config_nodedir: /usr/lib/sdk/node14
     buildsystem: simple
     build-commands:
       - ls -l
-      - 'HOME=$PWD yarn config --offline set yarn-offline-mirror $FLATPAK_BUILDER_BUILDDIR/flatpak-node/yarn-mirror'
-      - 'yarn --offline'
-      - '. flatpak-node/electron-builder-arch-args.sh; yarn run --offline pack -- $ELECTRON_BUILDER_ARCH_ARGS'
+      - HOME=$PWD yarn config --offline set yarn-offline-mirror $FLATPAK_BUILDER_BUILDDIR/flatpak-node/yarn-mirror
+      - yarn --offline
+      - . flatpak-node/electron-builder-arch-args.sh; yarn run --offline pack -- $ELECTRON_BUILDER_ARCH_ARGS
 
       - mv dist/linux-unpacked /app/sleek
       - install -Dm755 sleek.sh /app/bin/sleek
@@ -53,6 +53,7 @@ modules:
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
+        commit: 277a7963a6f67183d02e9e0e41bcdb0cfb21078d
       - generated-sources.json
       - type: file
         path: com.github.ransome1.sleek.appdata.xml
