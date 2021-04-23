@@ -36,7 +36,6 @@ modules:
     build-commands:
       - 'HOME=$PWD yarn config --offline set yarn-offline-mirror $FLATPAK_BUILDER_BUILDDIR/flatpak-node/yarn-mirror'
       - 'yarn --offline'
-      - ls -l
       - '. flatpak-node/electron-builder-arch-args.sh; yarn run --offline pack -- $ELECTRON_BUILDER_ARCH_ARGS'
 
       - mv dist/linux-unpacked /app/sleek
@@ -48,7 +47,11 @@ modules:
     sources:
       - type: git
         url: https://github.com/ransome1/sleek.git
+        commit: 277a7963a6f67183d02e9e0e41bcdb0cfb21078d
         dest: sleek
+        x-checker-data:
+          type: git
+          tag-pattern: ^v([\d.]+)$
       - generated-sources.json
       - type: file
         path: com.github.ransome1.sleek.appdata.xml
@@ -57,4 +60,6 @@ modules:
       - type: file
         path: com.github.ransome1.sleek.png
       - type: script
+        commands:
+          - exec env TMPDIR=$ELECTRON_CACHE zypak-wrapper /app/sleek/sleek
         dest-filename: sleek.sh
