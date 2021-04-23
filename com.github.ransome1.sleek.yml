@@ -49,6 +49,14 @@ modules:
       - type: git
         url: https://github.com/ransome1/sleek.git
         dest: sleek
+<<<<<<< HEAD
+=======
+        x-checker-data:
+          type: git
+          tag-pattern: ^v([\d.]+)$
+        commit: 9ec8afa1fc8b7b3c967ee1795ebf04ddaefba324
+        tag: v1.0.1
+>>>>>>> 53199be92f8ec194820e540baf82b187bcc3dd91
       - generated-sources.json
       - type: file
         path: com.github.ransome1.sleek.appdata.xml
