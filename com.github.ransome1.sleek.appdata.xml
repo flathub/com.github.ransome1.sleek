@@ -9,9 +9,12 @@
   <project_license>MIT</project_license>
   <developer_name>Robin Ahle</developer_name>
   <content_rating type="oars-1.0"/>
+<<<<<<< HEAD
   <releases>
     <release version="1.0.2" date="2021-04-24"/>
   </releases>
+=======
+>>>>>>> 8b0d8aa6020ccc1577e358dd4310c05cac6f2568
   <url type="homepage">https://github.com/ransome1/sleek</url>
 
   <recommends>
