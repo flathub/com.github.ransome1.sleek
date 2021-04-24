@@ -53,7 +53,6 @@ modules:
           type: git
           tag-pattern: ^v([\d.]+)$
       - generated-sources.json
-      - generated-sources.json
       - type: file
         path: com.github.ransome1.sleek.appdata.xml
       - type: file
