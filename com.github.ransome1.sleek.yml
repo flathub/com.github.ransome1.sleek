@@ -36,8 +36,6 @@ modules:
       - HOME=$PWD yarn config --offline set yarn-offline-mirror $FLATPAK_BUILDER_BUILDDIR/flatpak-node/yarn-mirror
       - yarn --offline
       - . flatpak-node/electron-builder-arch-args.sh; yarn run --offline pack -- $ELECTRON_BUILDER_ARCH_ARGS
-      
-      - ls -l dist/
       - mv dist/linux-* /app/sleek
       - install -Dm755 sleek.sh /app/bin/sleek
       - install -Dm644 com.github.ransome1.sleek.png /app/share/icons/hicolor/128x128/apps/com.github.ransome1.sleek.png
@@ -47,8 +45,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/ransome1/sleek.git
-        #tag: v1.0.2
-        commit: 33755110627246a159f5aeda1ed647ce08fb7841
+        tag: v1.0.2
         dest: .
         x-checker-data:
           type: git
