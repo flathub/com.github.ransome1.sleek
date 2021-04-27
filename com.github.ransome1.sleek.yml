@@ -26,6 +26,7 @@ modules:
       - type: archive
         url: https://github.com/yarnpkg/yarn/releases/download/v1.22.10/yarn-v1.22.10.tar.gz
         sha256: 7e433d4a77e2c79e6a7ae4866782608a8e8bcad3ec6783580577c59538381a6e
+
   - name: sleek
     build-options:
       append-path: '/usr/lib/sdk/node14/bin:/app/yarn/bin'
@@ -35,16 +36,23 @@ modules:
     build-commands:
       - HOME=$PWD yarn config --offline set yarn-offline-mirror $FLATPAK_BUILDER_BUILDDIR/flatpak-node/yarn-mirror
       - yarn --offline
-      - . flatpak-node/electron-builder-arch-args.sh; yarn run --offline pack -- $ELECTRON_BUILDER_ARCH_ARGS
-      - mv dist/linux-* /app/sleek
+      - . flatpak-node/electron-builder-arch-args.sh
+      - yarn run --offline pack -- $ELECTRON_BUILDER_ARCH_ARGS
+
+      # clean up
+      - rm dist/linux*-unpacked/LICENSES.chromium.html
+
+      - mv dist/linux*-unpacked /app/sleek
       - install -Dm755 sleek.sh /app/bin/sleek
-      - install -Dm644 com.github.ransome1.sleek.png /app/share/icons/hicolor/128x128/apps/com.github.ransome1.sleek.png
+      #- install -Dm644 com.github.ransome1.sleek.png /app/share/icons/hicolor/128x128/apps/com.github.ransome1.sleek.png
       - install -Dm644 com.github.ransome1.sleek.desktop /app/share/applications/com.github.ransome1.sleek.desktop
       - install -Dm644 com.github.ransome1.sleek.appdata.xml /app/share/metainfo/com.github.ransome1.sleek.appdata.xml
-      - install -Dm644 "assets/icons/sleek.svg" "app/share/icons/hicolor/scalable/apps/com.github.ransome1.sleek.svg"
+      - install -Dm644 assets/icons/sleek.svg /app/share/icons/hicolor/scalable/apps/com.github.ransome1.sleek.svg
     sources:
       - type: git
         url: https://github.com/ransome1/sleek.git
+      #- type: dir
+      #  path: ../sleek
         tag: v1.0.2
         dest: .
         x-checker-data:
