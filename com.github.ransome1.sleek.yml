@@ -53,7 +53,7 @@ modules:
         url: https://github.com/ransome1/sleek.git
       #- type: dir
       #  path: ../sleek
-        tag: v1.0.2
+        #tag: v1.0.2
         commit: efeac2bc03b75ad94c42dbb54450b3e25259b03c
         dest: .
         x-checker-data:
