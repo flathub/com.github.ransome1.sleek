@@ -19,7 +19,7 @@ modules:
   - name: yarn
     buildsystem: simple
     build-commands:
-      - 'cp -a * /app'
+      - cp -a * /app
     cleanup:
       - '*'
     sources:
@@ -29,7 +29,7 @@ modules:
 
   - name: sleek
     build-options:
-      append-path: '/usr/lib/sdk/node14/bin:/app/yarn/bin'
+      append-path: /usr/lib/sdk/node14/bin:/app/yarn/bin
       env:
         XDG_CACHE_HOME: /run/build/sleek/flatpak-node/cache
     buildsystem: simple
@@ -54,11 +54,12 @@ modules:
       #- type: dir
       #  path: ../sleek
         #tag: v1.0.2
-        commit: efeac2bc03b75ad94c42dbb54450b3e25259b03c
+        commit: f709fa75f2b74f271e46e67f8f56ba29228135f5
         dest: .
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
+        tag: v1.0.3
       - generated-sources.json
       - type: file
         path: com.github.ransome1.sleek.appdata.xml
