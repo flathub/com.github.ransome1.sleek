@@ -423,9 +423,9 @@
     },
     {
         "type": "file",
-        "url": "https://registry.yarnpkg.com/@fortawesome/fontawesome-free/-/fontawesome-free-5.15.3.tgz#c36ffa64a2a239bf948541a97b6ae8d729e09a9a",
-        "sha512": "ac59d250dfd03ad9ce020a85468a130371f9ec92c39b44041bf8cf764fad2d034bfde59df80a24f20dea088f90d71b833d6a465bf8bd2724a9255b2af10d2cf7",
-        "dest-filename": "@fortawesome-fontawesome-free-5.15.3.tgz",
+        "url": "https://registry.yarnpkg.com/@fortawesome/fontawesome-free/-/fontawesome-free-5.15.1.tgz#ccfef6ddbe59f8fe8f694783e1d3eb88902dc5eb",
+        "sha512": "384747ed2c82d6cb937610465bdd7fcc17d1eaa68885385b70df0f517b578a56381989d205b56a3a7b5d1db0b5bd7c2c0e75f4422c769b6f83494d49e75c9b39",
+        "dest-filename": "@fortawesome-fontawesome-free-5.15.1.tgz",
         "dest": "flatpak-node/yarn-mirror"
     },
     {
