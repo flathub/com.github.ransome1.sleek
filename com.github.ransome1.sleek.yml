@@ -46,14 +46,14 @@ modules:
       - install -Dm755 sleek.sh /app/bin/sleek
       - install -Dm644 com.github.ransome1.sleek.desktop /app/share/applications/com.github.ransome1.sleek.desktop
       - install -Dm644 com.github.ransome1.sleek.appdata.xml /app/share/metainfo/com.github.ransome1.sleek.appdata.xml
-      - install -Dm644 assets/icons/sleek.svg /app/share/icons/hicolor/scalable/apps/com.github.ransome1.sleek.svg
+      - install -Dm644 assets/icons/96x96.png /app/share/icons/hicolor/scalable/apps/com.github.ransome1.sleek.png
     sources:
       - type: git
         url: https://github.com/ransome1/sleek.git
       #- type: dir
       #  path: ../sleek
         #tag: v1.0.2
-        commit: 80b55017639b7aab1cbfb92d7fa143ad7b31a442
+        commit: 632e237beb47f26ad3b084bc5409ec557d949950
         dest: .
         #x-checker-data:
         #  type: git
