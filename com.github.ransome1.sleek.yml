@@ -44,7 +44,6 @@ modules:
 
       - mv dist/linux*-unpacked /app/sleek
       - install -Dm755 sleek.sh /app/bin/sleek
-      #- install -Dm644 com.github.ransome1.sleek.png /app/share/icons/hicolor/128x128/apps/com.github.ransome1.sleek.png
       - install -Dm644 com.github.ransome1.sleek.desktop /app/share/applications/com.github.ransome1.sleek.desktop
       - install -Dm644 com.github.ransome1.sleek.appdata.xml /app/share/metainfo/com.github.ransome1.sleek.appdata.xml
       - install -Dm644 assets/icons/sleek.svg /app/share/icons/hicolor/scalable/apps/com.github.ransome1.sleek.svg
@@ -54,11 +53,11 @@ modules:
       #- type: dir
       #  path: ../sleek
         #tag: v1.0.2
-        commit: efeac2bc03b75ad94c42dbb54450b3e25259b03c
+        commit: 80b55017639b7aab1cbfb92d7fa143ad7b31a442
         dest: .
-        x-checker-data:
-          type: git
-          tag-pattern: ^v([\d.]+)$
+        #x-checker-data:
+        #  type: git
+        #  tag-pattern: ^v([\d.]+)$
       - generated-sources.json
       - type: file
         path: com.github.ransome1.sleek.appdata.xml
