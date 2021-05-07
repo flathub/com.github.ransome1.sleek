@@ -423,13 +423,6 @@
     },
     {
         "type": "file",
-        "url": "https://registry.yarnpkg.com/@fortawesome/fontawesome-free/-/fontawesome-free-5.15.1.tgz#ccfef6ddbe59f8fe8f694783e1d3eb88902dc5eb",
-        "sha512": "384747ed2c82d6cb937610465bdd7fcc17d1eaa68885385b70df0f517b578a56381989d205b56a3a7b5d1db0b5bd7c2c0e75f4422c769b6f83494d49e75c9b39",
-        "dest-filename": "@fortawesome-fontawesome-free-5.15.1.tgz",
-        "dest": "flatpak-node/yarn-mirror"
-    },
-    {
-        "type": "file",
         "url": "https://registry.yarnpkg.com/@istanbuljs/load-nyc-config/-/load-nyc-config-1.1.0.tgz#fd3db1d59ecf7cf121e80650bb86712f9b55eced",
         "sha512": "5637874a5233a6ffcdc83dcdd18b877d738f0c88b1700d6ad9957df30b0ca9c6253e6bf69f761bda560ff5730496768555783903b60b4de2eee95f38b900e399",
         "dest-filename": "@istanbuljs-load-nyc-config-1.1.0.tgz",
