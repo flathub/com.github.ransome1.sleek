@@ -54,7 +54,7 @@ modules:
       #- type: dir
       #  path: ../sleek
         #tag: v1.0.2
-        commit: 632e237beb47f26ad3b084bc5409ec557d949950
+        commit: 9046ded2427bbdf3355745a0ad8b8050fad6dc19
         dest: .
         #x-checker-data:
         #  type: git
