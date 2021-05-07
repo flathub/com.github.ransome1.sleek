@@ -8,6 +8,7 @@
   <developer_name>Robin Ahle</developer_name>
   <content_rating type="oars-1.0"/>
   <releases>
+    <release version="1.0.4" date="2021-05-07"/>
     <release version="1.0.2" date="2021-04-26"/>
   </releases>
   <url type="homepage">https://github.com/ransome1/sleek</url>
