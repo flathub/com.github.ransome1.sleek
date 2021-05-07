@@ -44,16 +44,17 @@ modules:
 
       - mv dist/linux*-unpacked /app/sleek
       - install -Dm755 sleek.sh /app/bin/sleek
+      - install -Dm644 com.github.ransome1.sleek.png /app/share/icons/hicolor/128x128/apps/com.github.ransome1.sleek.png
       - install -Dm644 com.github.ransome1.sleek.desktop /app/share/applications/com.github.ransome1.sleek.desktop
       - install -Dm644 com.github.ransome1.sleek.appdata.xml /app/share/metainfo/com.github.ransome1.sleek.appdata.xml
-      - install -Dm644 assets/icons/96x96.png /app/share/icons/hicolor/scalable/apps/com.github.ransome1.sleek.png
+      - install -Dm644 assets/icons/sleek.svg /app/share/icons/hicolor/scalable/apps/com.github.ransome1.sleek.svg
     sources:
       - type: git
         url: https://github.com/ransome1/sleek.git
       #- type: dir
       #  path: ../sleek
         #tag: v1.0.2
-        commit: 5a8660dc35e8473c6b704927e00dbccaf011ca1e
+        commit: 632e237beb47f26ad3b084bc5409ec557d949950
         dest: .
         #x-checker-data:
         #  type: git
@@ -63,6 +64,8 @@ modules:
         path: com.github.ransome1.sleek.appdata.xml
       - type: file
         path: com.github.ransome1.sleek.desktop
+      - type: file
+        path: com.github.ransome1.sleek.png
       - type: script
         commands:
           - exec env TMPDIR=$XDG_CACHE_HOME zypak-wrapper /app/sleek/sleek
