@@ -8,7 +8,7 @@
   <developer_name>Robin Ahle</developer_name>
   <content_rating type="oars-1.0"/>
   <releases>
-    <release version="1.0.4" date="2021-05-26"/>
+    <release version="1.0.5" date="2021-06-01"/>
   </releases>
   <url type="homepage">https://github.com/ransome1/sleek</url>
   <recommends>
@@ -26,29 +26,30 @@
     <ul>
       <li>An existing todo.txt file can be used or a new one can be created</li>
       <li>Todos can be added, edited, marked as complete (and vice versa) or deleted</li>
-      <li>A todo can be hidden (add "h:1") but its attributes will appear in filter list and auto complete</li>
-      <li>Existing todos can be used as templates for new ones</li>
+      <li><a href="https://github.com/ransome1/sleek/wiki/Hidden-todos">A todo can be hidden but its attributes will be available in the filter drawer and autocomplete function</a></li>
+      <li>Dark and light mode can be toggled</li>
+      <li>A compact view is available</li>
       <li>Completed todos can be bulk archived to a separate done.txt ([name of todo file]_done.txt) file</li>
       <li>Completed todos can be shown or hidden</li>
-      <li>Todos can be sorted and grouped by their priorities, due dates, contexts or projects</li>
-      <li>Todos can be enriched by contexts, projects, start dates, due dates</li>
+      <li>Todos can be enriched, sorted and grouped by contexts, projects, start dates, due dates</li>
       <li>Multi line todos can be created</li>
-      <li>Todos can repeat themselves based on a given due date. You can use a recurrence picker or add the recurrence to the text field using: "rec:d" (daily), "rec:w" (weekly), "rec:m" (monthly), "rec:y" (annually)</li>
+      <li>Todos can have a due date</li>
+      <li><a href="https://github.com/ransome1/sleek/wiki/Recurring-todos">Todos can repeat themselves</a></li>
       <li>Available contexts and projects will be suggested according to your input</li>
       <li>Todos can be filtered by contexts and projects</li>
+      <li>Filters can be renamed or deleted by right clicking on them</li>
       <li>Filters are sorted alphanummerically</li>
       <li>Todos can be looked up using full-text search</li>
-      <li>A due date can be set using a datepicker</li>
       <li>Hyperlinks are detected automatically and can be clicked using the icon</li>
       <li>Alarms will be triggered when a todo is due tomorrow or today</li>
       <li>Todos that include either contexts or projects can be shown or hidden entirely</li>
-      <li>Dark and light mode can be toggled</li>
       <li>A file watcher rereads the file if it has been changed</li>
       <li>Multiple todo.txt files can be managed</li>
-      <li>Multiple languages are automatically detected or set by hand to German, English, Italian, Spanish and French</li>
+      <li>Multiple languages are automatically detected or set by hand to German, English, Italian, Spanish, French and Simplified Chinese (简体中文)</li>
+      <li>sleek can be minimized to tray</li>
       <li>Tabindex available</li>
       <li>Existing todos can be used as templates for new ones</li>
-      <li>Basic keyboard shortcuts are available</li>
+      <li><a href="https://github.com/ransome1/sleek/wiki/Keyboard-shortcuts">Keyboard shortcuts following todotxt.net</a></li>
     </ul>
   </description>
 
