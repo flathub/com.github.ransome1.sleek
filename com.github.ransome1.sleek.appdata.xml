@@ -24,10 +24,10 @@
     <p>Todos with due date or repeating todos will trigger notifications and completed todos can be hidden or archived into separate done.txt files. If users have tons of todos, a compact view can come in handy.</p>
     <p>Support sleek</p>
     <ul>
-      <li>Star, fork and watch it on Github (https://github.com/ransome1/sleek/)</li>
-      <li>Review it on SourceForge (https://sourceforge.net/projects/sleek/reviews) or Windows Store (https://www.microsoft.com/store/apps/9NWM2WXF60KR)</li>
-      <li>Contribute bug reports, code improvements, features or simply suggest new features (https://github.com/ransome1/sleek/issues)</li>
-      <li>Star, fork and watch it on Github (https://github.com/ransome1/sleek/)</li>
+      <li>Star, fork and watch it on Github (https://github.com/ransome1/sleek). Once sleek reaches 30 watchers, 30 forks and 75 stars, we can distribute it to MacOS using the Homebrew Package Manager</li>
+      <li>Review it on SourceForge (https://sourceforge.net/projects/sleek/reviews) or Windows App Store (https://www.microsoft.com/store/apps/9NWM2WXF60KR)</li>
+      <li>Contribute bug reports, code improvements, features or simply suggest new features: https://github.com/ransome1/sleek/issues</li>
+      <li>Translate sleek into your own language and contribute your translations</li>
     </ul>
     <p>Features</p>
     <ul>
