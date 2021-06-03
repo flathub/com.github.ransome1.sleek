@@ -50,7 +50,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/ransome1/sleek.git
-        commit: 27d621150eb502116664444ebbf952e52973f171
+        commit: b8dc7035fe89d08ca6735bc773a7cc8882c634a7
         dest: .
       - generated-sources.json
       - type: file
