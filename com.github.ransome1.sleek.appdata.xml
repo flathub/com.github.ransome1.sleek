@@ -3,6 +3,7 @@
   <id>com.github.ransome1.sleek</id>
   <name>sleek</name>
   <summary>Todo app based on the todo.txt format for Linux, free and open-source</summary>
+  <launchable type="desktop-id">com.github.ransome1.sleek.desktop</launchable>
   <metadata_license>MIT</metadata_license>
   <project_license>MIT</project_license>
   <developer_name>Robin Ahle</developer_name>
@@ -11,6 +12,10 @@
     <release version="1.0.5" date="2021-06-03"/>
   </releases>
   <url type="homepage">https://github.com/ransome1/sleek</url>
+  <url type="contact">https://github.com/ransome1/sleek/issues</url>
+  <url type="bugtracker">https://github.com/ransome1/sleek/issues</url>
+  <url type="donation">https://github.com/sponsors/ransome1</url>
+  <url type="help">https://github.com/ransome1/sleek/wiki</url>
   <recommends>
     <control>pointing</control>
     <control>keyboard</control>
@@ -52,8 +57,6 @@
       <li>Keyboard shortcuts following todotxt.net (https://github.com/ransome1/sleek/wiki/Keyboard-shortcuts)</li>
     </ul>
   </description>
-
-  <launchable type="desktop-id">com.github.ransome1.sleek.desktop</launchable>
   <screenshots>
     <screenshot type="default">
       <image>https://raw.githubusercontent.com/ransome1/sleek/master/assets/screenshots/linux/todo_list.png</image>

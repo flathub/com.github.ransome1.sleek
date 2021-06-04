@@ -26,7 +26,6 @@ modules:
       - type: archive
         url: https://github.com/yarnpkg/yarn/releases/download/v1.22.10/yarn-v1.22.10.tar.gz
         sha256: 7e433d4a77e2c79e6a7ae4866782608a8e8bcad3ec6783580577c59538381a6e
-
   - name: sleek
     build-options:
       append-path: '/usr/lib/sdk/node14/bin:/app/yarn/bin'
@@ -38,10 +37,7 @@ modules:
       - yarn --offline
       - . flatpak-node/electron-builder-arch-args.sh
       - yarn run --offline pack -- $ELECTRON_BUILDER_ARCH_ARGS
-
-      # clean up
       - rm dist/linux*-unpacked/LICENSES.chromium.html
-
       - mv dist/linux*-unpacked /app/sleek
       - install -Dm755 sleek.sh /app/bin/sleek
       - install -Dm644 com.github.ransome1.sleek.png /app/share/icons/hicolor/128x128/apps/com.github.ransome1.sleek.png
@@ -50,7 +46,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/ransome1/sleek.git
-        commit: b8dc7035fe89d08ca6735bc773a7cc8882c634a7
+        commit: 1e1beaa31d1141644134e6a59745e7e582b184a4
         dest: .
       - generated-sources.json
       - type: file
