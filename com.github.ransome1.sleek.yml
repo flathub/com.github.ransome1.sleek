@@ -46,7 +46,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/ransome1/sleek.git
-        commit: 712034b621adebf7834edd99edb2a3c42afca71a
+        commit: 8c11b640e77a960629ac8655cf5b04df862e4c47
         dest: .
       - generated-sources.json
       - type: file
