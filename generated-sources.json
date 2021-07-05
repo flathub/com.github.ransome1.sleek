@@ -2537,6 +2537,13 @@
     },
     {
         "type": "file",
+        "url": "https://registry.yarnpkg.com/peggy/-/peggy-1.2.0.tgz#657ba45900cbef1dc9f52356704bdbb193c2021c",
+        "sha512": "3d0f8d2a90286c899f329ad842d7381209b28b6f5b89d446117d242a3094e6eb96d3db340ad870aa17f2ee62e4c1c07855c81a704e4bfd98ebb83fe438f09453",
+        "dest-filename": "peggy-1.2.0.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
         "url": "https://registry.yarnpkg.com/pend/-/pend-1.2.0.tgz#7a57eb550a6783f9115331fcf4663d5c8e007a50",
         "sha1": "7a57eb550a6783f9115331fcf4663d5c8e007a50",
         "dest-filename": "pend-1.2.0.tgz",
