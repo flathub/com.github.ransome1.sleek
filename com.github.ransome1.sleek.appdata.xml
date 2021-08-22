@@ -9,7 +9,7 @@
   <developer_name>Robin Ahle</developer_name>
   <content_rating type="oars-1.0"/>
   <releases>
-    <release version="1.1.0" date="2021-07-27"/>
+    <release version="1.1.1" date="2021-08-22"/>
   </releases>
   <url type="homepage">https://github.com/ransome1/sleek</url>
   <url type="contact">https://github.com/ransome1/sleek/issues</url>
@@ -52,7 +52,7 @@
       <li>Todos that include either contexts or projects can be shown or hidden entirely</li>
       <li>A file watcher rereads the file if it has been changed</li>
       <li>Multiple todo.txt files can be managed and switched between using a tab bar or keyboard shortcuts</li>
-      <li>Multiple languages are automatically detected or set by hand to German, English, Italian, Spanish, French, Simplified Chinese (简体中文), Brazilian Portugese and Japanese</li>
+      <li>Multiple languages are automatically detected or set by hand to German, English, Italian, Spanish, French, Simplified Chinese (简体中文), Brazilian Portugese, Japanese and Turkish</li>
       <li>sleek can be minimized to tray</li>
       <li>Tabindex available</li>
       <li>Existing todos can be used as templates for new ones</li>
