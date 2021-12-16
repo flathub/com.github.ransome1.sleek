@@ -1,16 +1,16 @@
 [
     {
         "type": "archive",
-        "url": "https://www.electronjs.org/headers/v16.0.4/node-v16.0.4-headers.tar.gz",
+        "url": "https://www.electronjs.org/headers/v12.2.3/node-v12.2.3-headers.tar.gz",
         "strip-components": 1,
-        "sha256": "628e901a7b47e7cdaf6f88c7d0f8f7561184441680d006bdb98185d31589d685",
-        "dest": "flatpak-node/cache/node-gyp/16.0.4"
+        "sha256": "092a039e403f758f542a0f801acac8604e2d7a9b63d8f3c8c31df71c7ba8aac5",
+        "dest": "flatpak-node/cache/node-gyp/12.2.3"
     },
     {
         "type": "file",
         "url": "data:9",
         "dest-filename": "installVersion",
-        "dest": "flatpak-node/cache/node-gyp/16.0.4"
+        "dest": "flatpak-node/cache/node-gyp/12.2.3"
     },
     {
         "type": "file",
@@ -61,16 +61,16 @@
     },
     {
         "type": "file",
-        "url": "https://github.com/electron/electron/releases/download/v16.0.4/SHASUMS256.txt",
-        "sha256": "14298e98ee4ca1cd7cfc6d2394f690d1d7c3e4ded94a7153d0fd9ca938ee2180",
-        "dest-filename": "SHASUMS256.txt-16.0.4",
+        "url": "https://github.com/electron/electron/releases/download/v12.2.3/SHASUMS256.txt",
+        "sha256": "00cccebe152dd31e33411674e1f10e30036c3f40ad1d188ca7754299514a0641",
+        "dest-filename": "SHASUMS256.txt-12.2.3",
         "dest": "flatpak-node/cache/electron"
     },
     {
         "type": "file",
-        "url": "https://github.com/electron/electron/releases/download/v16.0.4/electron-v16.0.4-linux-arm64.zip",
-        "sha256": "ac47ece501e8844e03d2abab99afc27952c194f11a039107bb7620bee683f95d",
-        "dest-filename": "electron-v16.0.4-linux-arm64.zip",
+        "url": "https://github.com/electron/electron/releases/download/v12.2.3/electron-v12.2.3-linux-arm64.zip",
+        "sha256": "d29d234c09ba810d89ed1fba9e405b6975916ea208d001348379f89b50d1835c",
+        "dest-filename": "electron-v12.2.3-linux-arm64.zip",
         "dest": "flatpak-node/cache/electron",
         "only-arches": [
             "aarch64"
@@ -78,9 +78,9 @@
     },
     {
         "type": "file",
-        "url": "https://github.com/electron/electron/releases/download/v16.0.4/electron-v16.0.4-linux-armv7l.zip",
-        "sha256": "f077c8a2ee0ea2a02fc2a45902e2b13fcf0ba80a9859ab8967302f5f0bdcc406",
-        "dest-filename": "electron-v16.0.4-linux-armv7l.zip",
+        "url": "https://github.com/electron/electron/releases/download/v12.2.3/electron-v12.2.3-linux-armv7l.zip",
+        "sha256": "4de83c34987ac7b3b2d0c8c84f27f9a34d9ea2764ae1e54fb609a95064e7e71a",
+        "dest-filename": "electron-v12.2.3-linux-armv7l.zip",
         "dest": "flatpak-node/cache/electron",
         "only-arches": [
             "arm"
@@ -88,9 +88,9 @@
     },
     {
         "type": "file",
-        "url": "https://github.com/electron/electron/releases/download/v16.0.4/electron-v16.0.4-linux-ia32.zip",
-        "sha256": "825cda3a9c89c5f44990f1e68f25d7871d04277468ccbc9cc29a1472b81d5fa2",
-        "dest-filename": "electron-v16.0.4-linux-ia32.zip",
+        "url": "https://github.com/electron/electron/releases/download/v12.2.3/electron-v12.2.3-linux-ia32.zip",
+        "sha256": "11b4f159cd3b89d916cc05b5231c2cde53f0c6fb5be8e881824fde00daa5e8c2",
+        "dest-filename": "electron-v12.2.3-linux-ia32.zip",
         "dest": "flatpak-node/cache/electron",
         "only-arches": [
             "i386"
@@ -98,9 +98,9 @@
     },
     {
         "type": "file",
-        "url": "https://github.com/electron/electron/releases/download/v16.0.4/electron-v16.0.4-linux-x64.zip",
-        "sha256": "47fada0883bd62a5f47831abf70f5d41f44559de576e44accedf8489e8c5dd6b",
-        "dest-filename": "electron-v16.0.4-linux-x64.zip",
+        "url": "https://github.com/electron/electron/releases/download/v12.2.3/electron-v12.2.3-linux-x64.zip",
+        "sha256": "deae6d0941762147716b8298476080d961df2a32d0f6f57b244cbe3a2553cd24",
+        "dest-filename": "electron-v12.2.3-linux-x64.zip",
         "dest": "flatpak-node/cache/electron",
         "only-arches": [
             "x86_64"
@@ -1277,9 +1277,9 @@
     },
     {
         "type": "file",
-        "url": "https://registry.yarnpkg.com/electron/-/electron-16.0.4.tgz#87dfe21d17608537fc6df292c437362297566a73",
-        "sha512": "229b709a8c2f30fd5214e9992e1eabad44707e73b16c305705105c68e75f04ce48f81f6682d74dc33342df298514dcc491953074eca0f5fbb78b28c001021083",
-        "dest-filename": "electron-16.0.4.tgz",
+        "url": "https://registry.yarnpkg.com/electron/-/electron-12.2.3.tgz#d426a7861e3c722f92c32153f11f7bbedf65b000",
+        "sha512": "076edcedeab1d5b0b991e6ba027f28561935a5284d0b8546a966ab1cc843e3b303b66839e0a7a91cee406c0be628a64afe358decd4c2ef0c826130c494936d40",
+        "dest-filename": "electron-12.2.3.tgz",
         "dest": "flatpak-node/yarn-mirror"
     },
     {
@@ -3658,10 +3658,10 @@
     {
         "type": "shell",
         "commands": [
-            "mkdir -p \"httpsgithub.comelectronelectronreleasesdownloadv16.0.4electron-v16.0.4-linux-arm64.zip\"",
-            "ln -s \"../electron-v16.0.4-linux-arm64.zip\" \"httpsgithub.comelectronelectronreleasesdownloadv16.0.4electron-v16.0.4-linux-arm64.zip/electron-v16.0.4-linux-arm64.zip\"",
-            "mkdir -p \"625969703fca60f417f168de15e05663448414da45e461156402c401d6399e8d\"",
-            "ln -s \"../electron-v16.0.4-linux-arm64.zip\" \"625969703fca60f417f168de15e05663448414da45e461156402c401d6399e8d/electron-v16.0.4-linux-arm64.zip\""
+            "mkdir -p \"httpsgithub.comelectronelectronreleasesdownloadv12.2.3electron-v12.2.3-linux-arm64.zip\"",
+            "ln -s \"../electron-v12.2.3-linux-arm64.zip\" \"httpsgithub.comelectronelectronreleasesdownloadv12.2.3electron-v12.2.3-linux-arm64.zip/electron-v12.2.3-linux-arm64.zip\"",
+            "mkdir -p \"21080ae460721c6d406cde5e923a05c47b6c36107de0a317ca926c2de4275939\"",
+            "ln -s \"../electron-v12.2.3-linux-arm64.zip\" \"21080ae460721c6d406cde5e923a05c47b6c36107de0a317ca926c2de4275939/electron-v12.2.3-linux-arm64.zip\""
         ],
         "dest": "flatpak-node/cache/electron",
         "only-arches": [
@@ -3671,10 +3671,10 @@
     {
         "type": "shell",
         "commands": [
-            "mkdir -p \"httpsgithub.comelectronelectronreleasesdownloadv16.0.4electron-v16.0.4-linux-armv7l.zip\"",
-            "ln -s \"../electron-v16.0.4-linux-armv7l.zip\" \"httpsgithub.comelectronelectronreleasesdownloadv16.0.4electron-v16.0.4-linux-armv7l.zip/electron-v16.0.4-linux-armv7l.zip\"",
-            "mkdir -p \"625969703fca60f417f168de15e05663448414da45e461156402c401d6399e8d\"",
-            "ln -s \"../electron-v16.0.4-linux-armv7l.zip\" \"625969703fca60f417f168de15e05663448414da45e461156402c401d6399e8d/electron-v16.0.4-linux-armv7l.zip\""
+            "mkdir -p \"httpsgithub.comelectronelectronreleasesdownloadv12.2.3electron-v12.2.3-linux-armv7l.zip\"",
+            "ln -s \"../electron-v12.2.3-linux-armv7l.zip\" \"httpsgithub.comelectronelectronreleasesdownloadv12.2.3electron-v12.2.3-linux-armv7l.zip/electron-v12.2.3-linux-armv7l.zip\"",
+            "mkdir -p \"21080ae460721c6d406cde5e923a05c47b6c36107de0a317ca926c2de4275939\"",
+            "ln -s \"../electron-v12.2.3-linux-armv7l.zip\" \"21080ae460721c6d406cde5e923a05c47b6c36107de0a317ca926c2de4275939/electron-v12.2.3-linux-armv7l.zip\""
         ],
         "dest": "flatpak-node/cache/electron",
         "only-arches": [
@@ -3684,10 +3684,10 @@
     {
         "type": "shell",
         "commands": [
-            "mkdir -p \"httpsgithub.comelectronelectronreleasesdownloadv16.0.4electron-v16.0.4-linux-ia32.zip\"",
-            "ln -s \"../electron-v16.0.4-linux-ia32.zip\" \"httpsgithub.comelectronelectronreleasesdownloadv16.0.4electron-v16.0.4-linux-ia32.zip/electron-v16.0.4-linux-ia32.zip\"",
-            "mkdir -p \"625969703fca60f417f168de15e05663448414da45e461156402c401d6399e8d\"",
-            "ln -s \"../electron-v16.0.4-linux-ia32.zip\" \"625969703fca60f417f168de15e05663448414da45e461156402c401d6399e8d/electron-v16.0.4-linux-ia32.zip\""
+            "mkdir -p \"httpsgithub.comelectronelectronreleasesdownloadv12.2.3electron-v12.2.3-linux-ia32.zip\"",
+            "ln -s \"../electron-v12.2.3-linux-ia32.zip\" \"httpsgithub.comelectronelectronreleasesdownloadv12.2.3electron-v12.2.3-linux-ia32.zip/electron-v12.2.3-linux-ia32.zip\"",
+            "mkdir -p \"21080ae460721c6d406cde5e923a05c47b6c36107de0a317ca926c2de4275939\"",
+            "ln -s \"../electron-v12.2.3-linux-ia32.zip\" \"21080ae460721c6d406cde5e923a05c47b6c36107de0a317ca926c2de4275939/electron-v12.2.3-linux-ia32.zip\""
         ],
         "dest": "flatpak-node/cache/electron",
         "only-arches": [
@@ -3697,10 +3697,10 @@
     {
         "type": "shell",
         "commands": [
-            "mkdir -p \"httpsgithub.comelectronelectronreleasesdownloadv16.0.4electron-v16.0.4-linux-x64.zip\"",
-            "ln -s \"../electron-v16.0.4-linux-x64.zip\" \"httpsgithub.comelectronelectronreleasesdownloadv16.0.4electron-v16.0.4-linux-x64.zip/electron-v16.0.4-linux-x64.zip\"",
-            "mkdir -p \"625969703fca60f417f168de15e05663448414da45e461156402c401d6399e8d\"",
-            "ln -s \"../electron-v16.0.4-linux-x64.zip\" \"625969703fca60f417f168de15e05663448414da45e461156402c401d6399e8d/electron-v16.0.4-linux-x64.zip\""
+            "mkdir -p \"httpsgithub.comelectronelectronreleasesdownloadv12.2.3electron-v12.2.3-linux-x64.zip\"",
+            "ln -s \"../electron-v12.2.3-linux-x64.zip\" \"httpsgithub.comelectronelectronreleasesdownloadv12.2.3electron-v12.2.3-linux-x64.zip/electron-v12.2.3-linux-x64.zip\"",
+            "mkdir -p \"21080ae460721c6d406cde5e923a05c47b6c36107de0a317ca926c2de4275939\"",
+            "ln -s \"../electron-v12.2.3-linux-x64.zip\" \"21080ae460721c6d406cde5e923a05c47b6c36107de0a317ca926c2de4275939/electron-v12.2.3-linux-x64.zip\""
         ],
         "dest": "flatpak-node/cache/electron",
         "only-arches": [
