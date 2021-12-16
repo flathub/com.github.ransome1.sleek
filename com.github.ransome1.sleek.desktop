@@ -1,5 +1,9 @@
 [Desktop Entry]
+<<<<<<< HEAD
 Version=1.1.4
+=======
+Version=1.1.2
+>>>>>>> parent of f9981bd (Build v1.1.3)
 Name=sleek
 Exec=sleek
 Type=Application
