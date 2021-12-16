@@ -31,8 +31,10 @@ modules:
       append-path: '/usr/lib/sdk/node14/bin:/app/yarn/bin'
       env:
         XDG_CACHE_HOME: /run/build/sleek/flatpak-node/cache
+        GTK_USE_PORTAL: 1
     buildsystem: simple
     build-commands:
+      - GTK_USE_PORTAL=1
       - HOME=$PWD yarn config --offline set yarn-offline-mirror $FLATPAK_BUILDER_BUILDDIR/flatpak-node/yarn-mirror
       - yarn --offline
       - . flatpak-node/electron-builder-arch-args.sh
@@ -46,7 +48,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/ransome1/sleek.git
-        commit: 53fbe6d17631116dfcb37697d980f416eb73cd2c
+        commit: deaab045347875ba6e27c9233283e2fef2493763
         dest: .
       - generated-sources.json
       - type: file
