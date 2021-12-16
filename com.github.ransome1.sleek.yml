@@ -48,11 +48,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/ransome1/sleek.git
-<<<<<<< HEAD
         commit: deaab045347875ba6e27c9233283e2fef2493763
-=======
-        commit: aa10aa45379ac131f083036b20e804e2dba5f114
->>>>>>> parent of f9981bd (Build v1.1.3)
         dest: .
       - generated-sources.json
       - type: file
