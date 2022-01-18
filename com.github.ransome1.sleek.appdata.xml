@@ -9,7 +9,7 @@
   <developer_name>Robin Ahle</developer_name>
   <content_rating type="oars-1.0"/>
   <releases>
-    <release version="1.1.6" date="2022-01-17"/>
+    <release version="1.1.4" date="2021-12-16"/>
   </releases>
   <url type="homepage">https://github.com/ransome1/sleek</url>
   <url type="contact">https://github.com/ransome1/sleek/issues</url>
@@ -30,31 +30,33 @@
     <p>Features</p>
     <ul>
       <li>An existing todo.txt file can be used or a new one can be created</li>
-      <li>Todos can be enriched and searched for by priorities, contexts, projects, due dates, creation dates, recurrences, thresholds</li>
-      <li>Todo-List can be grouped and sorted by priorities, due dates, contexts or projects</li>
-      <li>The sorting order can be defined on all available levels</li>
-      <li>Top level sorting can be inverted</li>
-      <li>Sorting can be according to the order in file</li>
-      <li>Todos can be filtered by contexts, projects and priorities</li>
-      <li>Todos can be looked up by full-text search</li>
-      <li>Autocomplete function suggests available contexts and projects</li>
-      <li>Keyboard shortcuts following todotxt.net</li>
-      <li>Tabindex available</li>
-      <li>A todo can be hidden but its attributes will be available in the filter drawer and autocomplete function</li>
-      <li>Due dates trigger alarms and appear as badges in sleeks icon</li>
+      <li>Todos can be added, edited, marked as complete (and vice versa) or deleted</li>
+      <li>A todo can be hidden but its attributes will be available in the filter drawer and autocomplete function (https://github.com/ransome1/sleek/wiki/Hidden-todos)</li>
       <li>Dark and light mode can be toggled</li>
       <li>A compact view is available</li>
       <li>Completed todos can be bulk archived to a separate done.txt ([name of todo file]_done.txt) file</li>
       <li>Completed todos can be shown or hidden</li>
+      <li>Todos can be enriched, sorted and grouped by contexts, projects, start dates, due dates</li>
       <li>Multi line todos can be created</li>
+      <li>Todos can have a due date</li>
+      <li>Due dates will trigger alarms and show counter badges</li>
+      <li>Todos can repeat themselves (https://github.com/ransome1/sleek/wiki/Recurring-todos)</li>
+      <li>Threshold dates can be set (https://github.com/ransome1/sleek/wiki/Deferred-todos-(t:))</li>
+      <li>Available contexts and projects will be suggested according to your input</li>
+      <li>Todos can be filtered by contexts and projects</li>
       <li>Filters can be renamed or deleted by right clicking on them</li>
       <li>Filters are sorted alphanummerically</li>
+      <li>Todos can be looked up by using filter expressions (https://github.com/ransome1/sleek/wiki/FIlter-Expressions-for-Advanced-Search)</li>
       <li>Hyperlinks are detected automatically and can be clicked using the icon</li>
-      <li>A file watcher rereads the todo.txt file if it has been changed</li>
+      <li>Alarms will be triggered when a todo is due tomorrow or today</li>
+      <li>Todos that include either contexts or projects can be shown or hidden entirely</li>
+      <li>A file watcher rereads the file if it has been changed</li>
       <li>Multiple todo.txt files can be managed and switched between using a tab bar or keyboard shortcuts</li>
-      <li>Multiple languages are either detected or can be set by hand to German, English, Italian, Spanish, French, Simplified Chinese (简体中文), Brazilian Portugese, Japanese, Turkish, Hungarian, Czech, Polish</li>
+      <li>Multiple languages are automatically detected or set by hand to German, English, Italian, Spanish, French, Simplified Chinese (简体中文), Brazilian Portugese, Japanese, Turkish, Hungarian, Czech</li>
       <li>sleek can be minimized to tray</li>
+      <li>Tabindex available</li>
       <li>Existing todos can be used as templates for new ones</li>
+      <li>Keyboard shortcuts following todotxt.net (https://github.com/ransome1/sleek/wiki/Keyboard-shortcuts)</li>
       <li>Todo list can be copied to clipboard</li>
     </ul>
   </description>
