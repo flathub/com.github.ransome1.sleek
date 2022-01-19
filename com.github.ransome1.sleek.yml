@@ -14,7 +14,7 @@ finish-args:
   - --talk-name=org.freedesktop.Notifications
   - --filesystem=home
 sdk-extensions:
-  - org.freedesktop.Sdk.Extension.node14
+  - org.freedesktop.Sdk.Extension.node16
 modules:
   - name: yarn
     buildsystem: simple
@@ -28,7 +28,7 @@ modules:
         sha256: 267982c61119a055ba2b23d9cf90b02d3d16c202c03cb0c3a53b9633eae37249
   - name: sleek
     build-options:
-      append-path: '/usr/lib/sdk/node14/bin:/app/yarn/bin'
+      append-path: '/usr/lib/sdk/node16/bin:/app/yarn/bin'
       env:
         XDG_CACHE_HOME: /run/build/sleek/flatpak-node/cache
         GTK_USE_PORTAL: 1
