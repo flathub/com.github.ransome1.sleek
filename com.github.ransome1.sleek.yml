@@ -16,16 +16,6 @@ finish-args:
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.node14
 modules:
-  - name: yarn
-    buildsystem: simple
-    build-commands:
-      - 'cp -a * /app'
-    cleanup:
-      - '*'
-    sources:
-      - type: archive
-        url: https://github.com/yarnpkg/yarn/releases/download/v1.22.17/yarn-v1.22.17.tar.gz
-        sha256: 267982c61119a055ba2b23d9cf90b02d3d16c202c03cb0c3a53b9633eae37249
   - name: sleek
     build-options:
       append-path: '/usr/lib/sdk/node14/bin:/app/yarn/bin'
