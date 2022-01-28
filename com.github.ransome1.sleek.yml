@@ -34,7 +34,6 @@ modules:
         GTK_USE_PORTAL: 1
     buildsystem: simple
     build-commands:
-      - GTK_USE_PORTAL=1
       - HOME=$PWD yarn config --offline set yarn-offline-mirror $FLATPAK_BUILDER_BUILDDIR/flatpak-node/yarn-mirror
       - yarn --offline
       - . flatpak-node/electron-builder-arch-args.sh
