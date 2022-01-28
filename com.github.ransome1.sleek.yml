@@ -24,8 +24,9 @@ modules:
     buildsystem: simple
     build-commands:
       - yarn --offline
-      - . flatpak-node/electron-builder-arch-args.sh
-      - yarn run --offline pack -- $ELECTRON_BUILDER_ARCH_ARGS
+      - |
+        . flatpak-node/electron-builder-arch-args.sh
+        yarn run --offline pack -- $ELECTRON_BUILDER_ARCH_ARGS
       - rm dist/linux*-unpacked/LICENSES.chromium.html
       - mv dist/linux*-unpacked /app/sleek
       - install -Dm755 sleek.sh /app/bin/sleek
