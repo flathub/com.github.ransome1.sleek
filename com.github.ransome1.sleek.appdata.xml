@@ -2,14 +2,14 @@
 <component type="desktop-application">
   <id>com.github.ransome1.sleek</id>
   <name>sleek</name>
-  <summary>todo.txt manager for Linux, free and open-source (FOSS)</summary>
+  <summary>todo manager based on the todo.txt syntax for Linux, free and open-source (FOSS)</summary>
   <launchable type="desktop-id">com.github.ransome1.sleek.desktop</launchable>
   <metadata_license>MIT</metadata_license>
   <project_license>MIT</project_license>
   <developer_name>Robin Ahle</developer_name>
   <content_rating type="oars-1.0"/>
   <releases>
-    <release version="1.1.7" date="2022-03-24"/>
+    <release version="1.1.8" date="2022-04-06"/>
   </releases>
   <url type="homepage">https://github.com/ransome1/sleek</url>
   <url type="contact">https://github.com/ransome1/sleek/issues</url>
@@ -23,41 +23,30 @@
     <control>gamepad</control>
   </recommends>
   <description>
-    <p>sleek is a free and open-source (FOSS) todo manager that makes use of the todo.txt format. sleeks GUI is modern and simple but still offers a decent set of functions which help users getting things done. sleek is available as a client for Windows, MacOS and Linux.</p>
-    <p>Users can add contexts, projects, priorities, due dates, recurrences or threshold dates to their todos. These todo.txt attributes can then be used as filters or to group and sort the todo list.</p>
-    <p>sleek manages and watches multiple todo.txt files continuously for changes, which makes it easy to integrate sleek with other todo.txt apps. Also users can switch between bright and dark mode and choose from multiple languages.</p>
-    <p>Todos with due date or repeating todos will trigger notifications and completed todos can be hidden or archived into separate done.txt files. If users have tons of todos, a compact view can come in handy.</p>
+    <p>sleek is an open-source (FOSS) todo manager based on the todo.txt syntax. Stripped down to only the most necessary features, and with a clean and simple interface, sleek aims to help you focus on getting things done.</p>
+    <p>All classic todo.txt attributes are supported and enhanced by additional features. Creating todos is straightforward, and tag-based filtering in tandem with highly customisable grouping and smart full-text search allow for rapid information retrieval. Completed todos can be hidden or archived into separate done.txt files. Easy integration with other todo.txt apps is facilitated by continuously scanning todo.txt files for changes.</p>
+    <p>sleek is available for Windows, MacOS and Linux, and in several languages. For a detailed list of features, see below.</p>
     <p>Features</p>
     <ul>
-      <li>An existing todo.txt file can be used or a new one can be created</li>
-      <li>Todos can be added, edited, marked as complete (and vice versa) or deleted</li>
-      <li>A todo can be hidden but its attributes will be available in the filter drawer and autocomplete function (https://github.com/ransome1/sleek/wiki/Hidden-todos)</li>
-      <li>Dark and light mode can be toggled</li>
-      <li>A compact view is available</li>
-      <li>Completed todos can be bulk archived to a separate done.txt ([name of todo file]_done.txt) file</li>
-      <li>Completed todos can be shown or hidden</li>
-      <li>Todos can be enriched, sorted and grouped by contexts, projects, start dates, due dates</li>
-      <li>Multi line todos can be created</li>
-      <li>Todos can have a due date</li>
-      <li>Due dates will trigger alarms and show counter badges</li>
-      <li>Todos can repeat themselves (https://github.com/ransome1/sleek/wiki/Recurring-todos)</li>
-      <li>Threshold dates can be set (https://github.com/ransome1/sleek/wiki/Deferred-todos-(t:))</li>
-      <li>Available contexts and projects will be suggested according to your input</li>
-      <li>Todos can be filtered by contexts and projects</li>
-      <li>Filters can be renamed or deleted by right clicking on them</li>
-      <li>Filters are sorted alphanummerically</li>
-      <li>Todos can be looked up by using filter expressions (https://github.com/ransome1/sleek/wiki/FIlter-Expressions-for-Advanced-Search)</li>
-      <li>Hyperlinks are detected automatically and can be clicked using the icon</li>
-      <li>Alarms will be triggered when a todo is due tomorrow or today</li>
-      <li>Todos that include either contexts or projects can be shown or hidden entirely</li>
-      <li>A file watcher rereads the file if it has been changed</li>
-      <li>Multiple todo.txt files can be managed and switched between using a tab bar or keyboard shortcuts</li>
-      <li>Multiple languages are automatically detected or set by hand to German, English, Italian, Spanish, French, Simplified Chinese (简体中文), Brazilian Portugese, Japanese, Turkish, Hungarian, Czech, Polish</li>
-      <li>sleek can be minimized to tray</li>
-      <li>Tabindex available</li>
-      <li>Existing todos can be used as templates for new ones</li>
-      <li>Keyboard shortcuts following todotxt.net (https://github.com/ransome1/sleek/wiki/Keyboard-shortcuts)</li>
-      <li>Todo list can be copied to clipboard</li>
+      <li>Uses existing todo.txt files or creates new ones
+      <li>Add and search for todos by priorities, contexts, projects, due dates, creation dates, recurrences (repeating todos), threshold dates</li>>
+      <li>Sort and group todos by priority, due and creation date, context and project or as they occur in the text file
+      <li>Filter todos by context, project and priority
+      <li>Find todos using full-text search compatible with todo.txt syntax
+      <li>Inline autocomplete available
+      <li>Dates and priorities can be selected by built-in picker elements 
+      <li>Navigable via keyboard shortcuts
+      <li>Tabindex available
+      <li>Options for due date reminders and notification badges
+      <li>Easily toggle between dark and light mode
+      <li>Compact view and zoom available
+      <li>Completed todos can be shown, hidden and archived
+      <li>Multi line todos can be created
+      <li>Filters are sorted alphanummerically and can be renamed or deleted
+      <li>Hyperlinks detected automatically
+      <li>File watcher scans todo.txt files for changes
+      <li>Simultaneously manage multiple todo.txt files
+      <li>Language options: English, German, Italian, Spanish, French, Simplified Chinese, Brazilian Portugese, Japanese, Turkish, Hungarian, Czech, Polish</li>
     </ul>
   </description>
   <screenshots>
