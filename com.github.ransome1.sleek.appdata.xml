@@ -28,24 +28,24 @@
     <p>sleek is available for Windows, MacOS and Linux, and in several languages. For a detailed list of features, see below.</p>
     <p>Features</p>
     <ul>
-      <li>Uses existing todo.txt files or creates new ones
-      <li>Add and search for todos by priorities, contexts, projects, due dates, creation dates, recurrences (repeating todos), threshold dates</li>>
-      <li>Sort and group todos by priority, due and creation date, context and project or as they occur in the text file
-      <li>Filter todos by context, project and priority
-      <li>Find todos using full-text search compatible with todo.txt syntax
-      <li>Inline autocomplete available
-      <li>Dates and priorities can be selected by built-in picker elements 
-      <li>Navigable via keyboard shortcuts
-      <li>Tabindex available
-      <li>Options for due date reminders and notification badges
-      <li>Easily toggle between dark and light mode
-      <li>Compact view and zoom available
-      <li>Completed todos can be shown, hidden and archived
-      <li>Multi line todos can be created
-      <li>Filters are sorted alphanummerically and can be renamed or deleted
-      <li>Hyperlinks detected automatically
-      <li>File watcher scans todo.txt files for changes
-      <li>Simultaneously manage multiple todo.txt files
+      <li>Uses existing todo.txt files or creates new ones</li>
+      <li>Add and search for todos by priorities, contexts, projects, due dates, creation dates, recurrences (repeating todos), threshold dates</li>
+      <li>Sort and group todos by priority, due and creation date, context and project or as they occur in the text file</li>
+      <li>Filter todos by context, project and priority</li>
+      <li>Find todos using full-text search compatible with todo.txt syntax</li>
+      <li>Inline autocomplete available</li>
+      <li>Dates and priorities can be selected by built-in picker elements</li>
+      <li>Navigable via keyboard shortcuts</li>
+      <li>Tabindex available</li>
+      <li>Options for due date reminders and notification badges</li>
+      <li>Easily toggle between dark and light mode</li>
+      <li>Compact view and zoom available</li>
+      <li>Completed todos can be shown, hidden and archived</li>
+      <li>Multi line todos can be created</li>
+      <li>Filters are sorted alphanummerically and can be renamed or deleted</li>
+      <li>Hyperlinks detected automatically</li>
+      <li>File watcher scans todo.txt files for changes</li>
+      <li>Simultaneously manage multiple todo.txt files</li>
       <li>Language options: English, German, Italian, Spanish, French, Simplified Chinese, Brazilian Portugese, Japanese, Turkish, Hungarian, Czech, Polish</li>
     </ul>
   </description>
