@@ -36,10 +36,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/ransome1/sleek.git
-        dest: sleek
-        x-checker-data:
-          type: git
-          tag-pattern: ^v([\\d.]+)$
+        commit: 35b2787af02f4cb6c1d173c75639b5cd782cf9af
       - type: inline
         contents: |
           yarn-offline-mirror /run/build/sleek/flatpak-node/yarn-mirror
