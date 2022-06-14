@@ -23,7 +23,7 @@ modules:
         XDG_CACHE_HOME: /run/build/sleek/flatpak-node/cache
     buildsystem: simple
     build-commands:
-      - yarn --offline
+      - yarn --offline --production
       - |
         . flatpak-node/electron-builder-arch-args.sh
         yarn run --offline pack -- $ELECTRON_BUILDER_ARCH_ARGS
@@ -36,7 +36,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/ransome1/sleek.git
-        commit: c65b61c4d324e47a632df723904604371301570e
+        commit: 7d2497fe36f441624787ad6d7fbc90b925842b4a
       - type: inline
         contents: |
           yarn-offline-mirror /run/build/sleek/flatpak-node/yarn-mirror
