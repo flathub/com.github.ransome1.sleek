@@ -1959,20 +1959,6 @@
     },
     {
         "type": "file",
-        "url": "https://registry.yarnpkg.com/playwright-core/-/playwright-core-1.22.2.tgz#ed2963d79d71c2a18d5a6fd25b60b9f0a344661a",
-        "sha512": "c3f85cfcb77444ce299ac35e13a68bfdf3cd5b0f015a2b76b60f937ea277fa9e7d73ab3707a0bc997bd7ac83e67d01286e47050dcfb82a2acdcce43eb8148fd5",
-        "dest-filename": "playwright-core-1.22.2.tgz",
-        "dest": "flatpak-node/yarn-mirror"
-    },
-    {
-        "type": "file",
-        "url": "https://registry.yarnpkg.com/playwright/-/playwright-1.22.2.tgz#353a7c29f89ca9600edc7a9a30aed790823c797d",
-        "sha512": "8544e983b2f2b48977fcee2dd004094b557a856b1a498e6e67bc35a020bcaf76b501037977aa2d21d0a4881ddc6f381091c31a4718ac8a78cc14c56a664c9b75",
-        "dest-filename": "playwright-1.22.2.tgz",
-        "dest": "flatpak-node/yarn-mirror"
-    },
-    {
-        "type": "file",
         "url": "https://registry.yarnpkg.com/plist/-/plist-3.0.5.tgz#2cbeb52d10e3cdccccf0c11a63a85d830970a987",
         "sha512": "f37bd7e1e61d429def3fd4b1b9880433f1bfa4942a2d4cff57fc733ebcebb8bb3b7f3ee3c464359ac67f9a0d67c19c544ae3a9e2c6fefdb1086d1adbcd94710c",
         "dest-filename": "plist-3.0.5.tgz",
