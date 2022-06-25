@@ -23,7 +23,7 @@ modules:
         XDG_CACHE_HOME: /run/build/sleek/flatpak-node/cache
     buildsystem: simple
     build-commands:
-      - yarn --offline --production
+      - yarn --offline
       - |
         . flatpak-node/electron-builder-arch-args.sh
         yarn run --offline pack -- $ELECTRON_BUILDER_ARCH_ARGS
