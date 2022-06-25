@@ -13,6 +13,9 @@ finish-args:
   - --device=dri
   - --talk-name=org.freedesktop.Notifications
   - --filesystem=home
+  - --filesystem=/mnt
+  - --filesystem=/media
+  - --filesystem=/run/media
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.node14
 modules:
