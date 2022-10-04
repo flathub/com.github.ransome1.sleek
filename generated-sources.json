@@ -167,13 +167,6 @@
     },
     {
         "type": "file",
-        "url": "https://registry.yarnpkg.com/@playwright/test/-/test-1.26.1.tgz#73ada4e70f618bca69ba7509c4ba65b5a41c4b10",
-        "sha512": "6cdc72640495b7669d499f606c3ecd0b277371be49688d0e47d85ceecfa798f787eb4e20c29d33a75ecd369c1763873c9efb8119043da060f1ef62c4f9c516bf",
-        "dest-filename": "@playwright-test-1.26.1.tgz",
-        "dest": "flatpak-node/yarn-mirror"
-    },
-    {
-        "type": "file",
         "url": "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.14.0.tgz#9fb3a3cf3132328151f353de4632e01e52102bea",
         "sha512": "f4d113f75d0335a20f9e06272cb3de83e3a0ceab22f6e3389926e8539cbaa7c4b90f3313544b0966b6b08be0680cd51505ad83849a9061416f3037e0534eb62d",
         "dest-filename": "@sindresorhus-is-0.14.0.tgz",
@@ -2053,13 +2046,6 @@
         "url": "https://registry.yarnpkg.com/pify/-/pify-3.0.0.tgz#e5a4acd2c101fdf3d9a4d07f0dbc4db49dd28176",
         "sha512": "0b716c54d1f5b9d4845f8f20197d717efc1359fb185a3e54fbcfee2b5e411b3206acaa14a60857f21599c1afce1676a406289536606f7a64c947999ccbb88f72",
         "dest-filename": "pify-3.0.0.tgz",
-        "dest": "flatpak-node/yarn-mirror"
-    },
-    {
-        "type": "file",
-        "url": "https://registry.yarnpkg.com/playwright-core/-/playwright-core-1.26.1.tgz#a162f476488312dcf12638d97685144de6ada512",
-        "sha512": "87315c8618719c488f738a953ecf6ad9947ee5e28d89f6368500c7b60d479d34d4ba98580813fc6516f6b22f81d5347b0478ab81768f8b8f0b2327b94a0acb00",
-        "dest-filename": "playwright-core-1.26.1.tgz",
         "dest": "flatpak-node/yarn-mirror"
     },
     {

@@ -4,7 +4,7 @@ runtime-version: '21.08'
 sdk: org.freedesktop.Sdk
 base: org.electronjs.Electron2.BaseApp
 base-version: '21.08'
-separate-locales: false
+separate- : false
 command: sleek
 finish-args:
   - --share=ipc
@@ -39,7 +39,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/ransome1/sleek.git
-        commit: cbfc303cd37641bd089b14e963b866248f1b936d
+        commit: 4ab97852ba8a935de65737dc76618d6f24609994
       - type: inline
         contents: |
           yarn-offline-mirror /run/build/sleek/flatpak-node/yarn-mirror
