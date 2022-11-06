@@ -895,6 +895,13 @@
     },
     {
         "type": "file",
+        "url": "https://registry.yarnpkg.com/electron-notarize/-/electron-notarize-1.2.2.tgz#ebf2b258e8e08c1c9f8ff61dc53d5b16b439daf4",
+        "sha512": "652b5559871623b83ceff3e08cf25220887041739ac38fd779753ea56a8c324b522c768630b1ddc8f3cdec299aa3bf82afb7d8b9f035ea7a5db4c9dd61c88737",
+        "dest-filename": "electron-notarize-1.2.2.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
         "url": "https://registry.yarnpkg.com/electron-osx-sign/-/electron-osx-sign-0.6.0.tgz#9b69c191d471d9458ef5b1e4fdd52baa059f1bb8",
         "sha512": "fa188811bd97c64e9e0ca276145969a1f0a77a609b8db4f98f3f81286a5506b44d4f79164c6b380df357e88cc6c208b7de151c5c5fa416cf495beafa59cd4b46",
         "dest-filename": "electron-osx-sign-0.6.0.tgz",
@@ -1021,16 +1028,16 @@
     },
     {
         "type": "file",
-        "url": "https://registry.yarnpkg.com/eslint/-/eslint-8.26.0.tgz#2bcc8836e6c424c4ac26a5674a70d44d84f2181d",
-        "sha512": "933264a5ac3505fc217aae155d47b316b883d46c6ccd7e9d51e90ced9dda0b6a38863bbeb6c47f5f24c2dd1728483ee39b2f5590f537f8de988d55367bde8eca",
-        "dest-filename": "eslint-8.26.0.tgz",
+        "url": "https://registry.yarnpkg.com/eslint/-/eslint-8.27.0.tgz#d547e2f7239994ad1faa4bb5d84e5d809db7cf64",
+        "sha512": "d32d5b7c6da1a3b9adcbe4a220b55ff4f7ee440e3d7a4e0d73ad169a6bbad909686cd47e09e5dae315c826072ec1242066259a3c7fb9043b1cb69216d0f47fc1",
+        "dest-filename": "eslint-8.27.0.tgz",
         "dest": "flatpak-node/yarn-mirror"
     },
     {
         "type": "file",
-        "url": "https://registry.yarnpkg.com/espree/-/espree-9.4.0.tgz#cd4bc3d6e9336c433265fc0aa016fc1aaf182f8a",
-        "sha512": "0d09a74692e3edfe9380dfcd61bd0c4f32572febc917d877a47cb8261088b37cf07207b3f31986837b171dc10ef7b06b98ed8e4af0b031d7dd97297e13d2a33b",
-        "dest-filename": "espree-9.4.0.tgz",
+        "url": "https://registry.yarnpkg.com/espree/-/espree-9.4.1.tgz#51d6092615567a2c2cff7833445e37c28c0065bd",
+        "sha512": "5f072d7664cee9222f0b377df35d32c8dcc8aceaea35857d2a88b3c780bf99185ff6eab4a38c87a02114ffaef4a4ec4e2ff312ada7a4b6f4808e2efd917f7456",
+        "dest-filename": "espree-9.4.1.tgz",
         "dest": "flatpak-node/yarn-mirror"
     },
     {
@@ -1763,9 +1770,9 @@
     },
     {
         "type": "file",
-        "url": "https://registry.yarnpkg.com/marked/-/marked-4.2.1.tgz#eaa32594e45b4e58c02e4d118531fd04345de3b4",
-        "sha512": "54ad7f8cdb70a832ef3e4b4da4bd05760deaa1e51986646cba22233c4cbf947c175b8a2e2e865f3b85e859de02943b7e86ea55d552e9919844a2f8d4d16fe4a8",
-        "dest-filename": "marked-4.2.1.tgz",
+        "url": "https://registry.yarnpkg.com/marked/-/marked-4.2.2.tgz#1d2075ad6cdfe42e651ac221c32d949a26c0672a",
+        "sha512": "26305315302fb93800357c7cd9ae6fccaf492d232857a5772c1567e1485db28eadeef5eb1b1ee0d42776afa3584acc6b61b40614232a0438451f22b9ab652f71",
+        "dest-filename": "marked-4.2.2.tgz",
         "dest": "flatpak-node/yarn-mirror"
     },
     {
