@@ -734,6 +734,13 @@
     },
     {
         "type": "file",
+        "url": "https://registry.yarnpkg.com/cross-env/-/cross-env-7.0.3.tgz#865264b29677dc015ba8418918965dd232fc54cf",
+        "sha512": "fbf1ca77a1207100891a1d8f4a366e522b50050ca72a8af8c2b15b460e03b40812d5a58efa0539db1a47eccf52706817498980552f5b209f04cee686c34a0d03",
+        "dest-filename": "cross-env-7.0.3.tgz",
+        "dest": "flatpak-node/yarn-mirror"
+    },
+    {
+        "type": "file",
         "url": "https://registry.yarnpkg.com/cross-spawn/-/cross-spawn-7.0.3.tgz#f73a85b9d5d41d045551c177e2882d4ac85728a6",
         "sha512": "8910cf24a50f544343edd1cf3bcae46ce9cfa720f281c0c5b568e9796342832f163f6ad77315cbf13b2445e425e8eac1d86efe509ada82cd6ad7916e75cec6eb",
         "dest-filename": "cross-spawn-7.0.3.tgz",
@@ -2204,9 +2211,9 @@
     },
     {
         "type": "file",
-        "url": "https://registry.yarnpkg.com/sass/-/sass-1.56.0.tgz#134032075a3223c8d49cb5c35e091e5ba1de8e0a",
-        "sha512": "58527d5eba64727a99718b8b449879aa257a89b40e47801ece579e1234e332c0a87185b9f5d106d7d5377f04d35f1ce2d84777ca33c1a7bdbb85b6e3e77a4717",
-        "dest-filename": "sass-1.56.0.tgz",
+        "url": "https://registry.yarnpkg.com/sass/-/sass-1.56.1.tgz#94d3910cd468fd075fa87f5bb17437a0b617d8a7",
+        "sha512": "5691322a9c813c2c44eea183b4e71d27a7c56dca4e33e126bbbb992f156b917f0a554fc3a79505ed62efcea46e52107a9aaa90b75c5f7cba06f809ddc5366b09",
+        "dest-filename": "sass-1.56.1.tgz",
         "dest": "flatpak-node/yarn-mirror"
     },
     {
