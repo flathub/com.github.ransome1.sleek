@@ -37,16 +37,10 @@ modules:
       - install -Dm644 com.github.ransome1.sleek.desktop /app/share/applications/com.github.ransome1.sleek.desktop
       - install -Dm644 com.github.ransome1.sleek.appdata.xml /app/share/metainfo/com.github.ransome1.sleek.appdata.xml
     sources:
-      - type: git
-        tag-pattern: ^v([\\d.]+)$
-      # - type: git
-      #   url: https://github.com/ransome1/sleek.git
-      #   commit: 8504357d65a67a43453b673cefd133df9be84c6f
-      # - type: inline
-      #   contents: |
-      #     yarn-offline-mirror /run/build/sleek/flatpak-node/yarn-mirror
-      #   dest-filename: .yarnrc
-      # - generated-sources.json
+      - type: json
+        url: https://api.github.com/repos/ransome1/sleek/releases/latest
+        tag-query: .tag_name
+        version-query: $tag | sub(\"^sleek-\"; \"\")
       - type: file
         path: com.github.ransome1.sleek.appdata.xml
       - type: file
