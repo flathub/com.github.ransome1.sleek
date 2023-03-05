@@ -24,8 +24,8 @@ modules:
 
     sources:
       - type: file
-        url: https://github.com/ransome1/sleek/releases/download/v1.3.0/sleek_1.3.0_amd64.deb
-        sha256: 392c0f04dfe6965b40210053183502d91f75367eb9b4ff2a92e23ae9da767156
+        url: https://github.com/ransome1/sleek/releases/download/v1.3.1/sleek_1.3.1_amd64.deb
+        sha256: 131bd6b3334121d95f73f26dc0be398e4f103ba287810ce2642d6f1af1b1b4ea
       - type: file
         path: com.github.ransome1.sleek.appdata.xml      
       - type: script
