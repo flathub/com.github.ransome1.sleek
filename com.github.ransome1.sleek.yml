@@ -1,10 +1,10 @@
 app-id: com.github.ransome1.sleek
+base: org.electronjs.Electron2.BaseApp
+base-version: '21.08'
 runtime: org.freedesktop.Platform
 runtime-version: '21.08'
 sdk: org.freedesktop.Sdk
-base: org.electronjs.Electron2.BaseApp
-base-version: '21.08'
-separate- : false
+separate-locales: false
 command: sleek
 finish-args:
   - --share=ipc
@@ -16,38 +16,32 @@ finish-args:
   - --filesystem=/mnt
   - --filesystem=/media
   - --filesystem=/run/media
-sdk-extensions:
-  - org.freedesktop.Sdk.Extension.node14
+rename-desktop-file: sleek.desktop
+rename-icon: sleek
 modules:
   - name: sleek
-    build-options:
-      append-path: '/usr/lib/sdk/node14/bin:/app/yarn/bin'
-      env:
-        XDG_CACHE_HOME: /run/build/sleek/flatpak-node/cache
     buildsystem: simple
-    build-commands:
-      - yarn --offline
-      - |
-        . flatpak-node/electron-builder-arch-args.sh
-        yarn run --offline pack -- $ELECTRON_BUILDER_ARCH_ARGS
-      - rm dist/linux*-unpacked/LICENSES.chromium.html
-      - mv dist/linux*-unpacked /app/sleek
-      - install -Dm755 sleek.sh /app/bin/sleek
-      - install -Dm644 com.github.ransome1.sleek.png /app/share/icons/hicolor/128x128/apps/com.github.ransome1.sleek.png
-      - install -Dm644 com.github.ransome1.sleek.desktop /app/share/applications/com.github.ransome1.sleek.desktop
-      - install -Dm644 com.github.ransome1.sleek.appdata.xml /app/share/metainfo/com.github.ransome1.sleek.appdata.xml
+
     sources:
-      - type: json
-        url: https://api.github.com/repos/ransome1/sleek/releases/latest
-        tag-query: .tag_name
-        version-query: $tag | sub(\"^sleek-\"; \"\")
       - type: file
-        path: com.github.ransome1.sleek.appdata.xml
+        url: https://github.com/ransome1/sleek/releases/download/v1.3.0/sleek_1.3.0_amd64.deb
+        sha256: 392c0f04dfe6965b40210053183502d91f75367eb9b4ff2a92e23ae9da767156
       - type: file
-        path: com.github.ransome1.sleek.desktop
-      - type: file
-        path: com.github.ransome1.sleek.png
+        path: com.github.ransome1.sleek.appdata.xml      
       - type: script
-        commands:
-          - exec env TMPDIR=$XDG_CACHE_HOME zypak-wrapper /app/sleek/sleek
         dest-filename: sleek.sh
+        commands:
+          - export TMPDIR="$XDG_RUNTIME_DIR/app/$FLATPAK_ID"
+          - exec zypak-wrapper /app/sleek/sleek "$@"
+
+    build-commands:
+      - ar x sleek_*.deb
+      - rm -f sleek_*.deb
+      - tar -xf data.tar.xz
+      - rm -f control.tar.gz data.tar.xz debian-binary
+      - cp -r opt/* usr/* $FLATPAK_DEST
+      - rm -rf opt usr
+      - install -Dm755 sleek.sh $FLATPAK_DEST/bin/sleek
+      - install -D -m 644 -t $FLATPAK_DEST/share/metainfo $FLATPAK_ID.appdata.xml
+      - desktop-file-edit --set-key Exec --set-value "sleek %U" ${FLATPAK_DEST}/share/applications/sleek.desktop
+      - rm -rf "${FLATPAK_DEST}/share/icons/hicolor/1024x1024/"
