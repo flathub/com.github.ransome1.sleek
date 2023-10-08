@@ -1,5 +1,5 @@
-flatpak-node-generator.py
 build-dir
 .flatpak-builder
 .git
 .gitignore
+flatpak-builder-tools

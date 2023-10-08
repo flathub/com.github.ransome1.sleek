@@ -1,8 +1,8 @@
 app-id: com.github.ransome1.sleek
 base: org.electronjs.Electron2.BaseApp
-base-version: '21.08'
+base-version: '23.08'
 runtime: org.freedesktop.Platform
-runtime-version: '21.08'
+runtime-version: '23.08'
 sdk: org.freedesktop.Sdk
 separate-locales: false
 command: sleek
@@ -24,8 +24,8 @@ modules:
 
     sources:
       - type: file
-        url: https://github.com/ransome1/sleek/releases/download/v1.3.1/sleek_1.3.1_amd64.deb
-        sha256: 131bd6b3334121d95f73f26dc0be398e4f103ba287810ce2642d6f1af1b1b4ea
+        url: https://github.com/ransome1/sleek/releases/download/v2.0.0-dev14/sleek_2.0.0-dev14_amd64.deb
+        sha512: 4NnoNnja7MMVAL3nD4V7I1gT/etC7cZOY414dLtmu2TBJZIwhnUNZ11sZx42PwN98l0Ij0hDXmRe7h1UxGZvOw==
       - type: file
         path: com.github.ransome1.sleek.appdata.xml      
       - type: script
