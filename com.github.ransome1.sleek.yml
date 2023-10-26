@@ -1,10 +1,9 @@
 app-id: com.github.ransome1.sleek
-base: org.electronjs.Electron2.BaseApp
-base-version: '21.08'
 runtime: org.freedesktop.Platform
-runtime-version: '21.08'
+runtime-version: '23.08'
 sdk: org.freedesktop.Sdk
-separate-locales: false
+base: org.electronjs.Electron2.BaseApp
+base-version: '23.08'
 command: sleek
 finish-args:
   - --share=ipc
@@ -16,32 +15,35 @@ finish-args:
   - --filesystem=/mnt
   - --filesystem=/media
   - --filesystem=/run/media
-rename-desktop-file: sleek.desktop
-rename-icon: sleek
+sdk-extensions:
+  - org.freedesktop.Sdk.Extension.node18
 modules:
   - name: sleek
+    build-options:
+      append-path: '/usr/lib/sdk/node18/bin:/app/yarn/bin'
+      env:
+        XDG_CACHE_HOME: /run/build/sleek/flatpak-node/cache
     buildsystem: simple
-
-    sources:
-      - type: file
-        url: https://github.com/ransome1/sleek/releases/download/v1.3.1/sleek_1.3.1_amd64.deb
-        sha256: 131bd6b3334121d95f73f26dc0be398e4f103ba287810ce2642d6f1af1b1b4ea
-      - type: file
-        path: com.github.ransome1.sleek.appdata.xml      
-      - type: script
-        dest-filename: sleek.sh
-        commands:
-          - export TMPDIR="$XDG_RUNTIME_DIR/app/$FLATPAK_ID"
-          - exec zypak-wrapper /app/sleek/sleek "$@"
-
     build-commands:
-      - ar x sleek_*.deb
-      - rm -f sleek_*.deb
-      - tar -xf data.tar.xz
-      - rm -f control.tar.gz data.tar.xz debian-binary
-      - cp -r opt/* usr/* $FLATPAK_DEST
-      - rm -rf opt usr
-      - install -Dm755 sleek.sh $FLATPAK_DEST/bin/sleek
-      - install -D -m 644 -t $FLATPAK_DEST/share/metainfo $FLATPAK_ID.appdata.xml
-      - desktop-file-edit --set-key Exec --set-value "sleek %U" ${FLATPAK_DEST}/share/applications/sleek.desktop
-      - rm -rf "${FLATPAK_DEST}/share/icons/hicolor/1024x1024/"
+      - yarn --offline
+      - |
+        . flatpak-node/electron-builder-arch-args.sh
+        yarn run --offline dir -- $ELECTRON_BUILDER_ARCH_ARGS
+      - mv release/build/linux*-unpacked /app/sleek
+      - install -Dm755 sleek.sh /app/bin/sleek
+      - install -Dm644 assets/icons/512x512.png /app/share/icons/hicolor/128x128/apps/com.github.ransome1.sleek.png
+      - install -Dm644 flatpak/com.github.ransome1.sleek.desktop /app/share/applications/com.github.ransome1.sleek.desktop
+      - install -Dm644 flatpak/com.github.ransome1.sleek.appdata.xml /app/share/metainfo/com.github.ransome1.sleek.appdata.xml
+    sources:
+      - type: git
+        url: https://github.com/ransome1/sleek.git
+        commit: 2606e78352f84bd694c1ea597a885c6567aa309b
+      - type: inline
+        contents: |
+          yarn-offline-mirror /run/build/sleek/flatpak-node/yarn-mirror
+        dest-filename: .yarnrc
+      - generated-sources.json
+      - type: script
+        commands:
+          - exec env TMPDIR=$XDG_CACHE_HOME zypak-wrapper /app/sleek/sleek
+        dest-filename: sleek.sh
