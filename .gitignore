@@ -4,3 +4,4 @@ build-dir
 .flatpak-builder
 .git
 .gitignore
+.DS_Store
