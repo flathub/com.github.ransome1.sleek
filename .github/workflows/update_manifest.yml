@@ -12,6 +12,7 @@ jobs:
       - name: Update Manifest with Commit ID
         run: |
           COMMIT_ID=$1
+          echo "COMMIT_ID is: $COMMIT_ID"  # This line echoes the COMMIT_ID
           bash update_manifest.sh "$COMMIT_ID"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
