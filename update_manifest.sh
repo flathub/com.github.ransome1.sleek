@@ -1,6 +1,13 @@
 #!/bin/bash
-# Define the new commit ID
-NEW_COMMIT_ID=$(git rev-parse HEAD)
+# Accept the commit ID as an argument
+COMMIT_ID=$1
 
 # Update the manifest file with the new commit ID
-sed -i "s/commit: .*/commit: $NEW_COMMIT_ID/" com.github.ransome1.sleek.yml
+sed -i "s/commit: .*/commit: $COMMIT_ID/" com.github.ransome1.sleek.yml
+
+# Commit and push changes
+git config user.name github-actions
+git config user.email github-actions@github.com
+git add com.github.ransome1.sleek.yml
+git commit -m "Update commit ID in Flatpak manifest"
+git push

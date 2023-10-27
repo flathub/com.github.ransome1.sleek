@@ -1,0 +1,17 @@
+name: Update Flatpak manifest and commit
+on:
+  repository_dispatch:
+    types:
+      - trigger-flathub-build
+jobs:
+  update_manifest:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Update Manifest with Commit ID
+        run: |
+          COMMIT_ID=$1
+          bash update_manifest.sh "$COMMIT_ID"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
