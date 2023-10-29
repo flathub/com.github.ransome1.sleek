@@ -8,13 +8,9 @@ command: sleek
 finish-args:
   - --share=ipc
   - --socket=x11
-  - --share=network
   - --device=dri
   - --talk-name=org.freedesktop.Notifications
-  - --filesystem=home
-  - --filesystem=/mnt
-  - --filesystem=/media
-  - --filesystem=/run/media
+  - --talk-name=org.freedesktop.FileChooser
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.node18
 modules:
