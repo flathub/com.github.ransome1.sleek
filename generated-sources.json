@@ -4357,9 +4357,9 @@
     },
     {
         "type": "file",
-        "url": "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001557.tgz#13f762ea1d7f7b009d4d2785fbbd250354d09ad9",
-        "sha512": "f75a11ee12cd50fde01ba30b53e9fde9e9b7db66bc5f37acf3059d04a84b814a2226c005e62ad99f149409b73ea946573673c27d4c0b3a2f59099a64be341a8f",
-        "dest-filename": "caniuse-lite-1.0.30001557.tgz",
+        "url": "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001558.tgz#d2c6e21fdbfe83817f70feab902421a19b7983ee",
+        "sha512": "fc4b7b0f02eaa634b8ec93c4733e959f153d3f07087558b47222d7456050763d571727baf2949062957442d3d37d4296b8e6848a0fbf55ecf697be1e0dcd6d3d",
+        "dest-filename": "caniuse-lite-1.0.30001558.tgz",
         "dest": "flatpak-node/yarn-mirror"
     },
     {
