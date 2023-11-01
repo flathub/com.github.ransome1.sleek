@@ -2054,9 +2054,9 @@
     },
     {
         "type": "file",
-        "url": "https://registry.yarnpkg.com/@types/estree/-/estree-1.0.3.tgz#2be19e759a3dd18c79f9f436bd7363556c1a73dd",
-        "sha512": "092dab39aa10fde02001f7137eae9a98a1bb6ec37e10c720198e0500541dbd28f6cb58b1bce653500f663ad09a8bb135498bb6f375cdc3bbab28adf49cfdf091",
-        "dest-filename": "@types-estree-1.0.3.tgz",
+        "url": "https://registry.yarnpkg.com/@types/estree/-/estree-1.0.4.tgz#d9748f5742171b26218516cf1828b8eafaf8a9fa",
+        "sha512": "d89c169c72bd1fec1464da2b7f666beaf7acf7a587a160c921fb647313cab12ec38ed6ba66ee75f4b6ab8513658cf5e4a6c651d993303423de5bba265b4ec127",
+        "dest-filename": "@types-estree-1.0.4.tgz",
         "dest": "flatpak-node/yarn-mirror"
     },
     {
@@ -2159,9 +2159,9 @@
     },
     {
         "type": "file",
-        "url": "https://registry.yarnpkg.com/@types/jest/-/jest-29.5.6.tgz#f4cf7ef1b5b0bfc1aa744e41b24d9cc52533130b",
-        "sha512": "fedf4d9f390ea576f835fbe0d7b89e1c4e847928c34b64864a93587e82db50078bfc43ae794fd149d3961697d04d704433b060b985b55d0d046ccfba465221eb",
-        "dest-filename": "@types-jest-29.5.6.tgz",
+        "url": "https://registry.yarnpkg.com/@types/jest/-/jest-29.5.7.tgz#2c0dafe2715dd958a455bc10e2ec3e1ec47b5036",
+        "sha512": "1cbc9eb5a6fa2953d2885fbba45714c8c78bb31db92c33437a6c3d986b090646a2fe8a2ec2b8d3c9ca1c483628a4c130161376638b3da0fc8e0993687e04adda",
+        "dest-filename": "@types-jest-29.5.7.tgz",
         "dest": "flatpak-node/yarn-mirror"
     },
     {
@@ -4357,9 +4357,9 @@
     },
     {
         "type": "file",
-        "url": "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001558.tgz#d2c6e21fdbfe83817f70feab902421a19b7983ee",
-        "sha512": "fc4b7b0f02eaa634b8ec93c4733e959f153d3f07087558b47222d7456050763d571727baf2949062957442d3d37d4296b8e6848a0fbf55ecf697be1e0dcd6d3d",
-        "dest-filename": "caniuse-lite-1.0.30001558.tgz",
+        "url": "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001559.tgz#95a982440d3d314c471db68d02664fb7536c5a30",
+        "sha512": "70f88c29982a8248392d8dff9ed19e2c55298bab7375d04d4b9f00e2d9d3810c35cce37bbb6b19314ed2cce7951f8b63db4fbef6080bf95e850ce14c4da14560",
+        "dest-filename": "caniuse-lite-1.0.30001559.tgz",
         "dest": "flatpak-node/yarn-mirror"
     },
     {
@@ -5974,9 +5974,9 @@
     },
     {
         "type": "file",
-        "url": "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.570.tgz#5fb79061ead248a411bc8532da34d1dbf6ae23c1",
-        "sha512": "e46c47d0f2d221f5ca39430c1cc093e0cd289708f55b0031b101f3556e5587791bb2f1b0f1be24ecb1d09932c2d9a461b20173ac5e7b5c9a2671ae172dcfd61c",
-        "dest-filename": "electron-to-chromium-1.4.570.tgz",
+        "url": "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.571.tgz#8aa71539eb82db98740c3ec861256cc34e0356fd",
+        "sha512": "49cf95b4ac0a0838f77ff90b0637728cca4dce866c53a5ae2ffc056fa107f144a61c471e6f1457711ad5a4ea5acb1779dadb9ecb84540e952cc39392e4b849aa",
+        "dest-filename": "electron-to-chromium-1.4.571.tgz",
         "dest": "flatpak-node/yarn-mirror"
     },
     {
