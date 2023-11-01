@@ -1,5 +1,7 @@
 flatpak-node-generator.py
+flatpak-builder-tools
 build-dir
 .flatpak-builder
 .git
 .gitignore
+.DS_Store
