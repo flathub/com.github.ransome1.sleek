@@ -7,8 +7,7 @@ base-version: '23.08'
 command: sleek
 finish-args:
   - --share=ipc
-  - --socket=wayland
-  - --socket=fallback-x11
+  - --socket=x11
   - --device=dri
   - --share=network
   - --talk-name=org.freedesktop.Notifications
