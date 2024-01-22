@@ -13352,9 +13352,9 @@
     },
     {
         "type": "file",
-        "url": "https://registry.yarnpkg.com/ts-jest/-/ts-jest-29.1.1.tgz#f58fe62c63caf7bfcc5cc6472082f79180f0815b",
-        "sha512": "0fac639e76cfd7b702f399e58b01a22feb69a0a3744ada601344de3a35d04d4e8c5427ec078bfb696d390a043fd4ecb019bd31fe8cbd84716737eb1ccd389168",
-        "dest-filename": "ts-jest-29.1.1.tgz",
+        "url": "https://registry.yarnpkg.com/ts-jest/-/ts-jest-29.1.2.tgz#7613d8c81c43c8cb312c6904027257e814c40e09",
+        "sha512": "6ebe862681ff5945f8a6eec56d95ee586286343b94edbf148fbee0fd2a7ba6e655e845f3b81ca5e89ac40af9b43335734939121d64e286c5edfb95d8111e5bfa",
+        "dest-filename": "ts-jest-29.1.2.tgz",
         "dest": "flatpak-node/yarn-mirror"
     },
     {
