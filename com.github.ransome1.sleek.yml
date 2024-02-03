@@ -36,7 +36,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/ransome1/sleek.git
-        commit: 9f5de732f45272aedb8e0d6a0bdbd9e59016cab8
+        commit: 724c6410b2c26080c239b0fd3fed72eb0395a754
       - type: inline
         contents: |
           yarn-offline-mirror /run/build/sleek/flatpak-node/yarn-mirror
