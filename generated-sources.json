@@ -1968,13 +1968,6 @@
     },
     {
         "type": "file",
-        "url": "https://registry.yarnpkg.com/@peggyjs/from-mem/-/from-mem-1.2.1.tgz#b83db5b439f1b02159fe47f5c9684bd1ee244edd",
-        "sha512": "aa1e731bc58a4f7eb5e36fc5a8e62da45d2c711477649dc7e57493d5b27f295d85bf207932f501fed07d6638a145ed622a3243e0f04e65ccf3c04c7b849b6033",
-        "dest-filename": "@peggyjs-from-mem-1.2.1.tgz",
-        "dest": "flatpak-node/yarn-mirror"
-    },
-    {
-        "type": "file",
         "url": "https://registry.yarnpkg.com/@pkgjs/parseargs/-/parseargs-0.11.0.tgz#a77ea742fab25775145434eb1d2328cf5013ac33",
         "sha512": "fb55648dd0f44012cfa1d1ab2547aa6ab1fc54022f40e0c86f087d5e93f94b28ac7fb628420b0928f345a2aa8b425bbe550fed552b21311ea5a0f327f14f9d3e",
         "dest-filename": "@pkgjs-parseargs-0.11.0.tgz",
@@ -4967,13 +4960,6 @@
         "url": "https://registry.yarnpkg.com/commander/-/commander-10.0.1.tgz#881ee46b4f77d1c1dccc5823433aa39b022cbe06",
         "sha512": "cb8320dad5ec8699446d21b3c7b6a6ccfc0a28e086ba84913ff0a311dc3093414e1a551baba94aba8c83653359926c47749b69e7885d7d8fc952b74bed77ddba",
         "dest-filename": "commander-10.0.1.tgz",
-        "dest": "flatpak-node/yarn-mirror"
-    },
-    {
-        "type": "file",
-        "url": "https://registry.yarnpkg.com/commander/-/commander-12.1.0.tgz#01423b36f501259fdaac4d0e4d60c96c991585d3",
-        "sha512": "570f2a1caddb64cf72fcfd74bb75626fca3f0dd92f0363ad3ed66f0fcef540a8f2ef85a3d5648a1482cc3d13d27544b1e5114ad5aae527312d0383e41609dbb8",
-        "dest-filename": "commander-12.1.0.tgz",
         "dest": "flatpak-node/yarn-mirror"
     },
     {
@@ -11565,9 +11551,9 @@
     },
     {
         "type": "file",
-        "url": "https://registry.yarnpkg.com/peggy/-/peggy-4.0.2.tgz#440b79ff8270668294d877addb3a30bb9e28bad5",
-        "sha512": "8f871ea4f801db457b8689e64c023eed4d36db2fe7ff0562ed16db77642b325da789f1440a99e0bc0e9986bcff25d999e4b201a13764807703cf3680e82e0006",
-        "dest-filename": "peggy-4.0.2.tgz",
+        "url": "https://registry.yarnpkg.com/peggy/-/peggy-3.0.2.tgz#07d0578f1ab0ebbac25a202f544a454f37aa3af3",
+        "sha512": "9fb721b426c4a06611c196748bf3b7b7570fafaa3e77d5f1e19c32d8b61fcefd2f8dc84c054d2d3bea98632bd996804f720460cd8bc02f31961deeb4f498c4a6",
+        "dest-filename": "peggy-3.0.2.tgz",
         "dest": "flatpak-node/yarn-mirror"
     },
     {
@@ -13185,13 +13171,6 @@
         "url": "https://registry.yarnpkg.com/semver/-/semver-6.3.1.tgz#556d2ef8689146e46dcea4bfdd095f3434dffcb4",
         "sha512": "051ed5bc30951cefaadb10445ac9314ba0c9135a919dbec3c7352ba206fbd425a849f89c07162c88019df8a9749a6abf329ac6f7202b464cab4314cee978cccc",
         "dest-filename": "semver-6.3.1.tgz",
-        "dest": "flatpak-node/yarn-mirror"
-    },
-    {
-        "type": "file",
-        "url": "https://registry.yarnpkg.com/semver/-/semver-7.6.0.tgz#1a46a4db4bffcccd97b743b5005c8325f23d4e2d",
-        "sha512": "127c1786b9705cc93d80abb9fdf971e6cbff6a7e7b024469946de14caebc5bb1510cdfa4f8e5818fae4cefbd7d3a403cd972c1c6b717d0a4878fe5f908e84e56",
-        "dest-filename": "semver-7.6.0.tgz",
         "dest": "flatpak-node/yarn-mirror"
     },
     {
