@@ -13,11 +13,11 @@ finish-args:
   - --talk-name=org.freedesktop.Notifications
   - --talk-name=org.freedesktop.FileChooser
 sdk-extensions:
-  - org.freedesktop.Sdk.Extension.node18
+  - org.freedesktop.Sdk.Extension.node20
 modules:
   - name: sleek
     build-options:
-      append-path: '/usr/lib/sdk/node18/bin:/app/yarn/bin'
+      append-path: '/usr/lib/sdk/node20/bin:/app/yarn/bin'
       env:
         XDG_CACHE_HOME: /run/build/sleek/flatpak-node/cache
     buildsystem: simple
@@ -25,8 +25,8 @@ modules:
       - yarn --offline
       - |
         . flatpak-node/electron-builder-arch-args.sh
-        yarn run --offline dir -- $ELECTRON_BUILDER_ARCH_ARGS
-      - mv release/build/linux*-unpacked /app/sleek
+        yarn run --offline build:unpack -- $ELECTRON_BUILDER_ARCH_ARGS
+      - mv dist/linux*-unpacked /app/sleek
       - install -Dm755 sleek.sh /app/bin/sleek
       - install -Dm644 assets/icons/128x128.png /app/share/icons/hicolor/128x128/apps/com.github.ransome1.sleek.png
       - install -Dm644 assets/icons/256x256.png /app/share/icons/hicolor/256x256/apps/com.github.ransome1.sleek.png
@@ -36,7 +36,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/ransome1/sleek.git
-        commit: 6252fad240fed42be9c1759580908c4395569d5e
+        commit: 1583af6f0fc37da0db975c18868027dd07384fe9
       - type: inline
         contents: |
           yarn-offline-mirror /run/build/sleek/flatpak-node/yarn-mirror
