@@ -26,7 +26,7 @@ modules:
       - |
         . flatpak-node/electron-builder-arch-args.sh
         yarn run --offline build:unpack -- $ELECTRON_BUILDER_ARCH_ARGS
-      - mv release/build/linux*-unpacked /app/sleek
+      - mv dist/linux*-unpacked /app/sleek
       - install -Dm755 sleek.sh /app/bin/sleek
       - install -Dm644 assets/icons/128x128.png /app/share/icons/hicolor/128x128/apps/com.github.ransome1.sleek.png
       - install -Dm644 assets/icons/256x256.png /app/share/icons/hicolor/256x256/apps/com.github.ransome1.sleek.png
