@@ -13,11 +13,11 @@ finish-args:
   - --talk-name=org.freedesktop.Notifications
   - --talk-name=org.freedesktop.FileChooser
 sdk-extensions:
-  - org.freedesktop.Sdk.Extension.node18
+  - org.freedesktop.Sdk.Extension.node20
 modules:
   - name: sleek
     build-options:
-      append-path: '/usr/lib/sdk/node18/bin:/app/yarn/bin'
+      append-path: '/usr/lib/sdk/node20/bin:/app/yarn/bin'
       env:
         XDG_CACHE_HOME: /run/build/sleek/flatpak-node/cache
     buildsystem: simple
