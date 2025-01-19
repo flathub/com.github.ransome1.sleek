@@ -28,9 +28,9 @@ modules:
         yarn run --offline build:unpack -- $ELECTRON_BUILDER_ARCH_ARGS
       - mv dist/linux*-unpacked /app/sleek
       - install -Dm755 sleek.sh /app/bin/sleek
-      - install -Dm644 assets/icons/128x128.png /app/share/icons/hicolor/128x128/apps/com.github.ransome1.sleek.png
-      - install -Dm644 assets/icons/256x256.png /app/share/icons/hicolor/256x256/apps/com.github.ransome1.sleek.png
-      - install -Dm644 assets/icons/512x512.png /app/share/icons/hicolor/512x512/apps/com.github.ransome1.sleek.png
+      - install -Dm644 ./build/icons/128x128.png /app/share/icons/hicolor/128x128/apps/com.github.ransome1.sleek.png
+      - install -Dm644 ./build/icons/256x256.png /app/share/icons/hicolor/256x256/apps/com.github.ransome1.sleek.png
+      - install -Dm644 ./build/icons/512x512.png /app/share/icons/hicolor/512x512/apps/com.github.ransome1.sleek.png
       - install -Dm644 flatpak/com.github.ransome1.sleek.desktop /app/share/applications/com.github.ransome1.sleek.desktop
       - install -Dm644 flatpak/com.github.ransome1.sleek.appdata.xml /app/share/metainfo/com.github.ransome1.sleek.appdata.xml
     sources:
