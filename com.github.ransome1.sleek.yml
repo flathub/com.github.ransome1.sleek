@@ -28,15 +28,15 @@ modules:
         yarn run --offline build:unpack -- $ELECTRON_BUILDER_ARCH_ARGS
       - mv dist/linux*-unpacked /app/sleek
       - install -Dm755 sleek.sh /app/bin/sleek
-      - install -Dm644 assets/icons/128x128.png /app/share/icons/hicolor/128x128/apps/com.github.ransome1.sleek.png
-      - install -Dm644 assets/icons/256x256.png /app/share/icons/hicolor/256x256/apps/com.github.ransome1.sleek.png
-      - install -Dm644 assets/icons/512x512.png /app/share/icons/hicolor/512x512/apps/com.github.ransome1.sleek.png
+      - install -Dm644 ./build/128x128.png /app/share/icons/hicolor/128x128/apps/com.github.ransome1.sleek.png
+      - install -Dm644 ./build/256x256.png /app/share/icons/hicolor/256x256/apps/com.github.ransome1.sleek.png
+      - install -Dm644 ./build/512x512.png /app/share/icons/hicolor/512x512/apps/com.github.ransome1.sleek.png
       - install -Dm644 flatpak/com.github.ransome1.sleek.desktop /app/share/applications/com.github.ransome1.sleek.desktop
       - install -Dm644 flatpak/com.github.ransome1.sleek.appdata.xml /app/share/metainfo/com.github.ransome1.sleek.appdata.xml
     sources:
       - type: git
         url: https://github.com/ransome1/sleek.git
-        commit: 1583af6f0fc37da0db975c18868027dd07384fe9
+        commit: 5cbbbc64983a8140f3b7d227e7ef5fe4c7b09253
       - type: inline
         contents: |
           yarn-offline-mirror /run/build/sleek/flatpak-node/yarn-mirror
