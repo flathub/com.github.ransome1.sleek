@@ -25,7 +25,7 @@ modules:
         npm_config_offline: 'true'
     buildsystem: simple
     build-commands:
-      - npm install --prefer-offline
+      - npm install --offline
       - |
         . flatpak-node/electron-builder-arch-args.sh
         npm run build:unpack -- $ELECTRON_BUILDER_ARCH_ARGS --linux --dir
