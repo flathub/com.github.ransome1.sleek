@@ -22,10 +22,10 @@ modules:
         XDG_CACHE_HOME: /run/build/sleek/flatpak-node/cache
         npm_config_cache: /run/build/sleek/flatpak-node/npm-cache
         npm_config_nodedir: /usr/lib/sdk/node20
-        npm_config_offline: 'true'        
+        npm_config_offline: 'true'
     buildsystem: simple
     build-commands:
-      - npm install --offline
+      - npm install --prefer-offline
       - |
         . flatpak-node/electron-builder-arch-args.sh
         npm run build:unpack -- $ELECTRON_BUILDER_ARCH_ARGS --linux --dir
@@ -42,7 +42,7 @@ modules:
         commit: af4ee40a2f37f86876c342237d8b8f19ddb32803
       - type: inline
         contents: |
-          npm-offline-mirror /run/build/sleek/flatpak-node/npm-mirror
+          npm-offline-mirror /run/build/sleek/flatpak-node/npm-cache
         dest-filename: .npmrc
       - generated-sources.json
       - type: script
