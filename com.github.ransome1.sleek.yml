@@ -21,14 +21,13 @@ modules:
       env:
         XDG_CACHE_HOME: /run/build/sleek/flatpak-node/cache
         npm_config_cache: /run/build/sleek/flatpak-node/npm-cache
-        npm_config_nodedir: /usr/lib/sdk/node20
         npm_config_offline: 'true'
     buildsystem: simple
     build-commands:
       - npm install --offline
       - |
-        . flatpak-node/electron-builder-arch-args.sh
-        npm run --offline build:unpack -- $ELECTRON_BUILDER_ARCH_ARGS --linux --dir
+        ./flatpak-node/electron-builder-arch-args.sh
+        npm run build && npx electron-builder --linux --dir $ELECTRON_BUILDER_ARCH_ARGS
       - mv dist/linux*-unpacked /app/sleek
       - install -Dm755 sleek.sh /app/bin/sleek
       - install -Dm644 ./build/128x128.png /app/share/icons/hicolor/128x128/apps/com.github.ransome1.sleek.png
