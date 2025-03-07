@@ -28,7 +28,7 @@ modules:
       - npm install --offline
       - |
         . flatpak-node/electron-builder-arch-args.sh
-        npm run build:unpack -- $ELECTRON_BUILDER_ARCH_ARGS --linux --dir
+        npm run --offline build:unpack -- $ELECTRON_BUILDER_ARCH_ARGS --linux --dir
       - mv dist/linux*-unpacked /app/sleek
       - install -Dm755 sleek.sh /app/bin/sleek
       - install -Dm644 ./build/128x128.png /app/share/icons/hicolor/128x128/apps/com.github.ransome1.sleek.png
