@@ -20,7 +20,7 @@ modules:
       append-path: '/usr/lib/sdk/node20/bin'
       env:
         XDG_CACHE_HOME: /run/build/sleek/flatpak-node/cache
-        npm_config_cache: /run/build/sleek/flatpak-node/npm-cache
+        npm_config_cache: /run/build/sleek/flatpak-node/cache
         npm_config_offline: 'true'
     buildsystem: simple
     build-commands:
@@ -41,7 +41,7 @@ modules:
         commit: a7769092a1895585ac56f0e496ea468d8df442e8
       - type: inline
         contents: |
-          npm-offline-mirror /run/build/sleek/flatpak-node/npm-cache
+          npm-offline-mirror /run/build/sleek/flatpak-node/cache
         dest-filename: .npmrc
       - generated-sources.json
       - type: script
