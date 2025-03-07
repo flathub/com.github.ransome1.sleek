@@ -39,7 +39,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/ransome1/sleek.git
-        commit: af4ee40a2f37f86876c342237d8b8f19ddb32803
+        commit: a7769092a1895585ac56f0e496ea468d8df442e8
       - type: inline
         contents: |
           npm-offline-mirror /run/build/sleek/flatpak-node/npm-mirror
