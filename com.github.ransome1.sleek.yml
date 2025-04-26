@@ -5,7 +5,7 @@ sdk: org.freedesktop.Sdk
 base: org.electronjs.Electron2.BaseApp
 base-version: '23.08'
 command: sleek
-rename-desktop-file: com.github.ransome1.sleek.desktop
+#rename-desktop-file: com.github.ransome1.sleek.desktop
 name: sleek
 finish-args:
   - --share=ipc
@@ -27,7 +27,7 @@ modules:
       - install -Dm644 ./build/128x128.png /app/share/icons/hicolor/128x128/apps/com.github.ransome1.sleek.png
       - install -Dm644 ./build/256x256.png /app/share/icons/hicolor/256x256/apps/com.github.ransome1.sleek.png
       - install -Dm644 ./build/512x512.png /app/share/icons/hicolor/512x512/apps/com.github.ransome1.sleek.png
-      #- install -Dm644 flatpak/com.github.ransome1.sleek.desktop /app/share/applications/com.github.ransome1.sleek.desktop
+      - install -Dm644 flatpak/com.github.ransome1.sleek.desktop /app/share/applications/com.github.ransome1.sleek.desktop
       - install -Dm644 flatpak/com.github.ransome1.sleek.appdata.xml /app/share/metainfo/com.github.ransome1.sleek.appdata.xml
     sources:
       - type: git
