@@ -5,6 +5,8 @@ sdk: org.freedesktop.Sdk
 base: org.electronjs.Electron2.BaseApp
 base-version: '23.08'
 command: sleek
+rename-desktop-file: com.github.ransome1.sleek.desktop
+name: sleek
 finish-args:
   - --share=ipc
   - --socket=x11
@@ -16,20 +18,12 @@ sdk-extensions:
   - org.freedesktop.Sdk.Extension.node20
 modules:
   - name: sleek
-    build-options:
-      append-path: '/usr/lib/sdk/node20/bin'
-      env:
-        XDG_CACHE_HOME: /run/build/alovoa-electron/flatpak-node/cache
-        npm_config_cache: /run/build/alovoa-electron/flatpak-node/npm-cache
-        npm_config_offline: 'true'
     buildsystem: simple
     build-commands:
-      - npm install --offline
-      - |
-        . ../flatpak-node/electron-builder-arch-args.sh
-        npm run --offline build:unpack -- $ELECTRON_BUILDER_ARCH_ARGS  --linux --dir
-      - mv dist/linux*-unpacked /app/sleek
-      - install -Dm755 sleek.sh /app/bin/sleek
+      - ar x com.github.ransome1.sleek.deb
+      - tar -xf data.tar.* -C /app
+      - find /app/opt/sleek/ -exec chmod -R a-s,go+rX,go-w {} \;
+      - install -Dm755 sleek-entrypoint.sh /app/bin/sleek
       - install -Dm644 ./build/128x128.png /app/share/icons/hicolor/128x128/apps/com.github.ransome1.sleek.png
       - install -Dm644 ./build/256x256.png /app/share/icons/hicolor/256x256/apps/com.github.ransome1.sleek.png
       - install -Dm644 ./build/512x512.png /app/share/icons/hicolor/512x512/apps/com.github.ransome1.sleek.png
@@ -39,8 +33,21 @@ modules:
       - type: git
         url: https://github.com/ransome1/sleek.git
         commit: af4ee40a2f37f86876c342237d8b8f19ddb32803
-      - generated-sources.json
       - type: script
         commands:
-          - exec env TMPDIR=$XDG_CACHE_HOME zypak-wrapper /app/sleek/sleek
-        dest-filename: sleek.sh
+          - |
+            echo '#!/bin/sh' > sleek-entrypoint.sh
+            echo 'exec env TMPDIR=$XDG_CACHE_HOME zypak-wrapper /app/opt/sleek/sleek "$@"' >> sleek-entrypoint.sh
+        dest-filename: sleek-entrypoint.sh
+      - type: file
+        dest-filename: com.github.ransome1.sleek.deb
+        url: https://github.com/ransome1/sleek/releases/download/v2.0.19/sleek-2.0.19-linux-amd64.deb
+        sha256: f9e77e41eddec7d6fdbe4bbcb2cd0aa3049ba84c6d6794054d13b30ce52aa56b
+        only-arches:
+          - x86_64
+      - type: file
+        dest-filename: com.github.ransome1.sleek.deb
+        url: https://github.com/ransome1/sleek/releases/download/v2.0.19/sleek-2.0.19-linux-arm64.deb
+        sha256: fbe334ef96c1dce886f4dc6f93fb7892fc660bc9cae59860668e1324a939f66e
+        only-arches:
+          - aarch64
