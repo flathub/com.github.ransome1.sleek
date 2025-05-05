@@ -37,15 +37,15 @@ modules:
         script: |
           #!/bin/sh
           exec env TMPDIR=$XDG_CACHE_HOME zypak-wrapper /app/opt/sleek/sleek "$@"
-        - type: file
-          dest-filename: com.github.ransome1.sleek.deb
-          url: https://github.com/ransome1/sleek/releases/download/v2.0.19/sleek-2.0.19-linux-amd64.deb
-          sha256: f9e77e41eddec7d6fdbe4bbcb2cd0aa3049ba84c6d6794054d13b30ce52aa56b
-          only-arches:
-            - x86_64
-        - type: file
-          dest-filename: com.github.ransome1.sleek.deb
-          url: https://github.com/ransome1/sleek/releases/download/v2.0.19/sleek-2.0.19-linux-aarch64.deb
-          sha256: 0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5
-          only-arches:
-            - aarch64
+      - type: file
+        dest-filename: com.github.ransome1.sleek.deb
+        url: https://github.com/ransome1/sleek/releases/download/v2.0.19/sleek-2.0.19-linux-amd64.deb
+        sha256: f9e77e41eddec7d6fdbe4bbcb2cd0aa3049ba84c6d6794054d13b30ce52aa56b
+        only-arches:
+          - x86_64
+      - type: file
+        dest-filename: com.github.ransome1.sleek.deb
+        url: https://github.com/ransome1/sleek/releases/download/v2.0.19/sleek-2.0.19-linux-aarch64.deb
+        sha256: 0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5
+        only-arches:
+          - aarch64
