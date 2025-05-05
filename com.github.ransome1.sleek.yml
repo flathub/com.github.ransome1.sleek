@@ -48,7 +48,7 @@ modules:
           - x86_64
       - type: file
         dest-filename: com.github.ransome1.sleek.deb
-        url: https://github.com/ransome1/sleek/releases/download/v2.0.19/sleek-2.0.19-linux-aarch64.deb
+        url: https://github.com/ransome1/sleek/releases/download/v2.0.19/sleek-2.0.19-linux-arm64.deb
         sha256: 0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5
         only-arches:
           - aarch64
