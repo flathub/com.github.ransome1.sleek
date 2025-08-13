@@ -1,9 +1,9 @@
 app-id: com.github.ransome1.sleek
 runtime: org.freedesktop.Platform
-runtime-version: '23.08'
+runtime-version: '24.08'
 sdk: org.freedesktop.Sdk
 base: org.electronjs.Electron2.BaseApp
-base-version: '23.08'
+base-version: '24.08'
 command: sleek
 finish-args:
   - --share=ipc
@@ -16,18 +16,12 @@ sdk-extensions:
   - org.freedesktop.Sdk.Extension.node20
 modules:
   - name: sleek
-    build-options:
-      append-path: '/usr/lib/sdk/node20/bin:/app/yarn/bin'
-      env:
-        XDG_CACHE_HOME: /run/build/sleek/flatpak-node/cache
     buildsystem: simple
     build-commands:
-      - yarn --offline
-      - |
-        . flatpak-node/electron-builder-arch-args.sh
-        yarn run --offline build:unpack -- $ELECTRON_BUILDER_ARCH_ARGS
-      - mv dist/linux*-unpacked /app/sleek
-      - install -Dm755 sleek.sh /app/bin/sleek
+      - ar x com.github.ransome1.sleek.deb
+      - tar -xf data.tar.* -C /app
+      - find /app/opt/sleek/ -exec chmod -R a-s,go+rX,go-w {} \;
+      - install -Dm755 sleek-entrypoint.sh /app/bin/sleek
       - install -Dm644 ./build/128x128.png /app/share/icons/hicolor/128x128/apps/com.github.ransome1.sleek.png
       - install -Dm644 ./build/256x256.png /app/share/icons/hicolor/256x256/apps/com.github.ransome1.sleek.png
       - install -Dm644 ./build/512x512.png /app/share/icons/hicolor/512x512/apps/com.github.ransome1.sleek.png
@@ -36,13 +30,20 @@ modules:
     sources:
       - type: git
         url: https://github.com/ransome1/sleek.git
-        commit: 5cbbbc64983a8140f3b7d227e7ef5fe4c7b09253
-      - type: inline
-        contents: |
-          yarn-offline-mirror /run/build/sleek/flatpak-node/yarn-mirror
-        dest-filename: .yarnrc
-      - generated-sources.json
+        commit: f4748cd8c83b1fe45960405e93f0266afae141de
       - type: script
+        dest-filename: sleek-entrypoint.sh
         commands:
-          - exec env TMPDIR=$XDG_CACHE_HOME zypak-wrapper /app/sleek/sleek
-        dest-filename: sleek.sh
+          - exec env TMPDIR=$XDG_CACHE_HOME zypak-wrapper /app/opt/sleek/sleek "$@"
+      - type: file
+        dest-filename: com.github.ransome1.sleek.deb
+        url: https://github.com/ransome1/sleek/releases/download/v2.0.20/sleek-2.0.20-linux-amd64.deb
+        sha256: 2bb1d2ba14a9b585c80732fd49b340796d4913a43bfbef18e0044584e1820170
+        only-arches:
+          - x86_64
+      - type: file
+        dest-filename: com.github.ransome1.sleek.deb
+        url: https://github.com/ransome1/sleek/releases/download/v2.0.20/sleek-2.0.20-linux-arm64.deb
+        sha256: 954851864f93ffaef289c4d9d20aed58a8dce109b29bd479cb2ee9ba5219faa6
+        only-arches:
+          - aarch64
