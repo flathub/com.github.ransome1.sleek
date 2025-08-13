@@ -3,11 +3,11 @@ runtime: org.freedesktop.Platform
 runtime-version: '23.08'
 sdk: org.freedesktop.Sdk
 base: org.electronjs.Electron2.BaseApp
-base-version: '23.08'
+base-version: '24.08'
 command: sleek
-name: sleek
 finish-args:
   - --share=ipc
+  - --socket=wayland
   - --socket=x11
   - --device=dri
   - --share=network
@@ -31,20 +31,20 @@ modules:
     sources:
       - type: git
         url: https://github.com/ransome1/sleek.git
-        commit: 988579f6c789f8050331259f455b5d38b4a23b6a
+        commit: f4748cd8c83b1fe45960405e93f0266afae141de
       - type: script
         dest-filename: sleek-entrypoint.sh
         commands:
-          - exec env TMPDIR=$XDG_CACHE_HOME zypak-wrapper /app/opt/sleek/sleek "$@"
+          - exec env TMPDIR=$XDG_CACHE_HOME env ELECTRON_OZONE_PLATFORM_HINT=auto env GDK_BACKEND=wayland,x11 env GTK_USE_PORTAL=1 zypak-wrapper /app/opt/sleek/sleek "$@"
       - type: file
         dest-filename: com.github.ransome1.sleek.deb
-        url: https://github.com/ransome1/sleek/releases/download/v2.0.19/sleek-2.0.19-linux-amd64.deb
-        sha256: f9e77e41eddec7d6fdbe4bbcb2cd0aa3049ba84c6d6794054d13b30ce52aa56b
+        url: https://github.com/ransome1/sleek/releases/download/v2.0.20/sleek-2.0.20-linux-amd64.deb
+        sha256: c3daf558a08f5f9efed958402669dd209375f2e3d833de012f4898510222557f
         only-arches:
           - x86_64
       - type: file
         dest-filename: com.github.ransome1.sleek.deb
-        url: https://github.com/ransome1/sleek/releases/download/v2.0.19/sleek-2.0.19-linux-arm64.deb
-        sha256: fbe334ef96c1dce886f4dc6f93fb7892fc660bc9cae59860668e1324a939f66e
+        url: https://github.com/ransome1/sleek/releases/download/v2.0.20/sleek-2.0.20-linux-arm64.deb
+        sha256: 40db2a0f4804eb5d224912cfe40e5dc6613586c1378d0a427f6a9ed2a279b534
         only-arches:
           - aarch64
