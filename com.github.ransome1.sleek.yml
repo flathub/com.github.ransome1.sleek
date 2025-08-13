@@ -7,7 +7,6 @@ base-version: '24.08'
 command: sleek
 finish-args:
   - --share=ipc
-  - --socket=system-bus
   - --socket=x11
   - --device=dri
   - --share=network
