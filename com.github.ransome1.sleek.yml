@@ -38,12 +38,12 @@ modules:
       - type: file
         dest-filename: com.github.ransome1.sleek.deb
         url: https://github.com/ransome1/sleek/releases/download/v2.0.20/sleek-2.0.20-linux-amd64.deb
-        sha256: c3daf558a08f5f9efed958402669dd209375f2e3d833de012f4898510222557f
+        sha256: 2bb1d2ba14a9b585c80732fd49b340796d4913a43bfbef18e0044584e1820170
         only-arches:
           - x86_64
       - type: file
         dest-filename: com.github.ransome1.sleek.deb
         url: https://github.com/ransome1/sleek/releases/download/v2.0.20/sleek-2.0.20-linux-arm64.deb
-        sha256: 40db2a0f4804eb5d224912cfe40e5dc6613586c1378d0a427f6a9ed2a279b534
+        sha256: 954851864f93ffaef289c4d9d20aed58a8dce109b29bd479cb2ee9ba5219faa6
         only-arches:
           - aarch64
