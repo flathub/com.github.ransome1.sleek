@@ -7,7 +7,6 @@ base-version: '24.08'
 command: sleek
 finish-args:
   - --share=ipc
-  - --socket=wayland
   - --socket=x11
   - --device=dri
   - --share=network
@@ -35,7 +34,7 @@ modules:
       - type: script
         dest-filename: sleek-entrypoint.sh
         commands:
-          - exec env TMPDIR=$XDG_CACHE_HOME env ELECTRON_OZONE_PLATFORM_HINT=auto env GDK_BACKEND=wayland,x11 env GTK_USE_PORTAL=1 zypak-wrapper /app/opt/sleek/sleek "$@"
+          - exec env TMPDIR=$XDG_CACHE_HOME env GTK_USE_PORTAL=1 zypak-wrapper /app/opt/sleek/sleek "$@"
       - type: file
         dest-filename: com.github.ransome1.sleek.deb
         url: https://github.com/ransome1/sleek/releases/download/v2.0.20/sleek-2.0.20-linux-amd64.deb
