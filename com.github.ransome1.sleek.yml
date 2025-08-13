@@ -35,11 +35,7 @@ modules:
       - type: script
         dest-filename: sleek-entrypoint.sh
         commands:
-          - |
-            cat << 'EOF' > sleek-entrypoint.sh
-            #!/bin/sh
-            exec env TMPDIR=$XDG_CACHE_HOME zypak-wrapper /app/opt/sleek/sleek "$@"
-            EOF
+          - exec env TMPDIR=$XDG_CACHE_HOME zypak-wrapper /app/opt/sleek/sleek "$@"
       - type: file
         dest-filename: com.github.ransome1.sleek.deb
         url: https://github.com/ransome1/sleek/releases/download/v2.0.19/sleek-2.0.19-linux-amd64.deb
