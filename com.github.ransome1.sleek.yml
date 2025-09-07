@@ -50,5 +50,4 @@ modules:
         only-arches:
           - aarch64
       - type: file
-        path: CHANGELOG.md
-        dest-filename: CHANGELOG.md          
+        url: https://raw.githubusercontent.com/ransome1/sleek/refs/heads/main/CHANGELOG.md
