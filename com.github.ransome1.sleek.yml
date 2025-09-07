@@ -37,13 +37,13 @@ modules:
           - exec env TMPDIR=$XDG_CACHE_HOME zypak-wrapper /app/opt/sleek/sleek "$@"
       - type: file
         dest-filename: com.github.ransome1.sleek.deb
+        url: https://github.com/ransome1/sleek/releases/download/v2.0.21/sleek-2.0.21-linux-arm64.deb
+        sha256: e7dfa53eaf2b4931fe8e317eec4121e124e8f25689cb9ad980f2cfcfd77c29fb
+        only-arches:
+          - aarch64          
+      - type: file
+        dest-filename: com.github.ransome1.sleek.deb
         url: https://github.com/ransome1/sleek/releases/download/v2.0.21/sleek-2.0.21-linux-amd64.deb
         sha256: 7fbd09bd8a993170589b658c71558a157def43ddd0fccc82ae9de756af075e77
         only-arches:
           - x86_64
-      - type: file
-        dest-filename: com.github.ransome1.sleek.deb
-        url: https://github.com/ransome1/sleek/releases/download/v2.0.21/sleek-2.0.21-linux-arm64.deb
-        sha256: e7dfa53eaf2b4931fe8e317eec4121e124e8f25689cb9ad980f2cfcfd77c29fb
-        only-arches:
-          - aarch64
