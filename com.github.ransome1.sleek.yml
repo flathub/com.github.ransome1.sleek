@@ -27,8 +27,6 @@ modules:
       - install -Dm644 ./build/512x512.png /app/share/icons/hicolor/512x512/apps/com.github.ransome1.sleek.png
       - install -Dm644 flatpak/com.github.ransome1.sleek.desktop /app/share/applications/com.github.ransome1.sleek.desktop
       - install -Dm644 flatpak/com.github.ransome1.sleek.appdata.xml /app/share/metainfo/com.github.ransome1.sleek.appdata.xml
-      - install -Dm644 CHANGELOG.md /app/share/doc/sleek/CHANGELOG.md
-      - install -Dm644 CHANGELOG.md /app/share/metainfo/sleek/CHANGELOG.md
     sources:
       - type: git
         url: https://github.com/ransome1/sleek.git
@@ -49,5 +47,3 @@ modules:
         sha256: e7dfa53eaf2b4931fe8e317eec4121e124e8f25689cb9ad980f2cfcfd77c29fb
         only-arches:
           - aarch64
-      - type: file
-        url: https://raw.githubusercontent.com/ransome1/sleek/refs/heads/main/CHANGELOG.md
