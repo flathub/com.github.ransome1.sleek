@@ -27,23 +27,28 @@ modules:
       - install -Dm644 ./build/512x512.png /app/share/icons/hicolor/512x512/apps/com.github.ransome1.sleek.png
       - install -Dm644 flatpak/com.github.ransome1.sleek.desktop /app/share/applications/com.github.ransome1.sleek.desktop
       - install -Dm644 flatpak/com.github.ransome1.sleek.appdata.xml /app/share/metainfo/com.github.ransome1.sleek.appdata.xml
+      - install -Dm644 CHANGELOG.md /app/share/doc/sleek/CHANGELOG.md
+      - install -Dm644 CHANGELOG.md /app/share/metainfo/sleek/CHANGELOG.md
     sources:
       - type: git
         url: https://github.com/ransome1/sleek.git
-        commit: f4748cd8c83b1fe45960405e93f0266afae141de
+        commit: 5cca9fbe905caef60fd3c9748e6db76f4d724d41
       - type: script
         dest-filename: sleek-entrypoint.sh
         commands:
           - exec env TMPDIR=$XDG_CACHE_HOME zypak-wrapper /app/opt/sleek/sleek "$@"
       - type: file
         dest-filename: com.github.ransome1.sleek.deb
-        url: https://github.com/ransome1/sleek/releases/download/v2.0.20/sleek-2.0.20-linux-amd64.deb
-        sha256: 2bb1d2ba14a9b585c80732fd49b340796d4913a43bfbef18e0044584e1820170
+        url: https://github.com/ransome1/sleek/releases/download/v2.0.21/sleek-2.0.21-linux-amd64.deb
+        sha256: 7fbd09bd8a993170589b658c71558a157def43ddd0fccc82ae9de756af075e77
         only-arches:
           - x86_64
       - type: file
         dest-filename: com.github.ransome1.sleek.deb
-        url: https://github.com/ransome1/sleek/releases/download/v2.0.20/sleek-2.0.20-linux-arm64.deb
-        sha256: 954851864f93ffaef289c4d9d20aed58a8dce109b29bd479cb2ee9ba5219faa6
+        url: https://github.com/ransome1/sleek/releases/download/v2.0.21/sleek-2.0.21-linux-arm64.deb
+        sha256: e7dfa53eaf2b4931fe8e317eec4121e124e8f25689cb9ad980f2cfcfd77c29fb
         only-arches:
           - aarch64
+      - type: file
+        path: CHANGELOG.md
+        dest-filename: CHANGELOG.md          
