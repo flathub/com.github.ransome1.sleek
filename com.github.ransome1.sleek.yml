@@ -1,9 +1,9 @@
 app-id: com.github.ransome1.sleek
 runtime: org.freedesktop.Platform
-runtime-version: '24.08'
+runtime-version: '25.08'
 sdk: org.freedesktop.Sdk
 base: org.electronjs.Electron2.BaseApp
-base-version: '24.08'
+base-version: '25.08'
 command: sleek
 finish-args:
   - --share=ipc
