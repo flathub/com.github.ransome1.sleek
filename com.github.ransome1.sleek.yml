@@ -35,7 +35,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/ransome1/sleek.git
-        commit: a1c161a9e1ccbf32149d20116ad481252a0d90af
+        commit: 4d7c318763510e1fa52fe7b4fce13406833f2453
       - type: script
         dest-filename: sleek-entrypoint.sh
         commands:
