@@ -35,7 +35,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/ransome1/sleek.git
-        commit: 9af124d3fc67fd4e22b99c74e98128a84bfdf137
+        commit: 41c903343bd2d26c58152273de73af1e27e692c4
       - type: script
         dest-filename: sleek-entrypoint.sh
         commands:
@@ -49,13 +49,13 @@ modules:
             fi
       - type: file
         dest-filename: com.github.ransome1.sleek.deb
-        url: https://github.com/ransome1/sleek/releases/download/v2.0.29/sleek-2.0.29-linux-arm64.deb
-        sha256: fc20144e5c9879a2bca42aedeea4b5e17d1d568ef659788167954950df3baa9e
+        url: https://github.com/ransome1/sleek/releases/download/v2.1.1/sleek-2.1.1-linux-arm64.deb
+        sha256: 1dbfacc69c006d5ca3421ed8ab4328a6fcece4be4ddcb2e38ef170a624084c3c
         only-arches:
           - aarch64          
       - type: file
         dest-filename: com.github.ransome1.sleek.deb
-        url: https://github.com/ransome1/sleek/releases/download/v2.0.29/sleek-2.0.29-linux-amd64.deb
-        sha256: a766e7c245eeeba69eab648dd45179724b235833b82a2e464c93fc3bed5fb712
+        url: https://github.com/ransome1/sleek/releases/download/v2.1.1/sleek-2.1.1-linux-amd64.deb
+        sha256: fce4ac3a0d911aa03e3d0cd01727e560a29e9281fcb23b13dbefbd870b9e2f80
         only-arches:
           - x86_64
